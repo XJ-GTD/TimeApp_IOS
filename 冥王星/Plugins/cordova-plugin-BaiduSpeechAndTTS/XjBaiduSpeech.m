@@ -6,7 +6,7 @@
 #import "BDSASRParameters.h"
 
 @interface XjBaiduSpeech : CDVPlugin<BDSClientASRDelegate> {
-  // Member variables go here.
+    // Member variables go here.
 }
 
 @property (nonatomic, strong) NSString* callbackId;
@@ -33,7 +33,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 
 - (void) pluginInitialize {
     self.asrEventManager = [BDSEventManager createEventManagerWithName:BDS_ASR_NAME];
-   [self configVoiceRecognitionClient];
+    [self configVoiceRecognitionClient];
 }
 
 
@@ -47,7 +47,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
     self.callbackId = command.callbackId;
     
     [self configFileHandler];
-
+    
     [self.asrEventManager sendCommand:BDS_ASR_CMD_START];
 }
 
@@ -65,7 +65,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 {
     self.callbackId = command.callbackId;
     [self.asrEventManager setDelegate:self];
-
+    
     [self.asrEventManager sendCommand:BDS_ASR_CMD_STOP];
 }
 
@@ -73,7 +73,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 {
     self.callbackId = command.callbackId;
     [self.asrEventManager setDelegate:self];
-
+    
     [self.asrEventManager sendCommand:BDS_ASR_CMD_CANCEL];
 }
 
@@ -81,7 +81,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 {
     self.callbackId = command.callbackId;
     [self.asrEventManager setDelegate:self];
-
+    
     [self.asrEventManager sendCommand:BDS_ASR_CMD_STOP];
 }
 
@@ -93,23 +93,23 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
     [self.asrEventManager setParameter:@[API_KEY_1, SECRET_KEY_1] forKey:BDS_ASR_API_SECRET_KEYS];
     [self.asrEventManager setParameter:APP_ID_1 forKey:BDS_ASR_OFFLINE_APP_CODE];
     //[self.asrEventManager setParameter:@(NO) forKey:BDS_ASR_ENABLE_LONG_SPEECH];
-
+    
     //配置端点检测（二选一）
     [self configModelVAD];
     //[self configDNNMFE];
-
+    
     //[self.asrEventManager setParameter:@"15361" forKey:BDS_ASR_PRODUCT_ID];
     // ---- 语义与标点 -----
     [self enableNLU];
     //    [self enablePunctuation];
     // ------------------------
-
+    
     //离线配置
-   //[self configOfflineClient];
-
-   //开启声音
-  [self.asrEventManager setParameter:@(EVRPlayToneAll) forKey:BDS_ASR_PLAY_TONE];
-
+    //[self configOfflineClient];
+    
+    //开启声音
+    [self.asrEventManager setParameter:@(EVRPlayToneAll) forKey:BDS_ASR_PLAY_TONE];
+    
 }
 
 
@@ -126,21 +126,21 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
     //    [self.asrEventManager setParameter:@"1537" forKey:BDS_ASR_PRODUCT_ID];
     // 英文标点
     [self.asrEventManager setParameter:@"1737" forKey:BDS_ASR_PRODUCT_ID];
-
+    
 }
 
 
 - (void)configModelVAD {
-   NSString *modelVAD_filepath = [[NSBundle mainBundle] pathForResource:@"bds_easr_basic_model" ofType:@"dat"];
-
+    NSString *modelVAD_filepath = [[NSBundle mainBundle] pathForResource:@"bds_easr_basic_model" ofType:@"dat"];
+    
     [self.asrEventManager setParameter:modelVAD_filepath forKey:BDS_ASR_MODEL_VAD_DAT_FILE];
-
-   [self.asrEventManager setParameter:@(YES) forKey:BDS_ASR_ENABLE_MODEL_VAD];
+    
+    [self.asrEventManager setParameter:@(YES) forKey:BDS_ASR_ENABLE_MODEL_VAD];
     // 服务端VAD
     [self.asrEventManager setParameter:@(YES) forKey:BDS_ASR_ENABLE_EARLY_RETURN];
     // 本地VAD
     [self.asrEventManager setParameter:@(NO) forKey:BDS_ASR_ENABLE_LOCAL_VAD];
-
+    
 }
 
 - (void)configDNNMFE {
@@ -148,7 +148,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
     [self.asrEventManager setParameter:mfe_dnn_filepath forKey:BDS_ASR_MFE_DNN_DAT_FILE];
     NSString *cmvn_dnn_filepath = [[NSBundle mainBundle] pathForResource:@"bds_easr_mfe_cmvn" ofType:@"dat"];
     [self.asrEventManager setParameter:cmvn_dnn_filepath forKey:BDS_ASR_MFE_CMVN_DAT_FILE];
-
+    
     // 关闭服务端VAD
     [self.asrEventManager setParameter:@(NO) forKey:BDS_ASR_ENABLE_EARLY_RETURN];
     // 关闭本地VAD
@@ -159,7 +159,7 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 }
 
 - (void)configOfflineClient {
-
+    
     // 离线仅可识别自定义语法规则下的词
     [self.asrEventManager setParameter:@(EVR_STRATEGY_BOTH) forKey:BDS_ASR_STRATEGY];
     NSString* gramm_filepath = [[NSBundle mainBundle] pathForResource:@"bds_easr_gramm" ofType:@"dat"];
@@ -180,9 +180,9 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
             [self.fileHandler writeData:(NSData *)aObj];
             break;
         }
-
+            
         case EVoiceRecognitionClientWorkStatusStartWorkIng: {
-
+            
             NSLog(@"Did EVoiceRecognitionClientWorkStatusStartWorkIng");
             break;
         }
@@ -196,19 +196,47 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
         }
         case EVoiceRecognitionClientWorkStatusFlushData: {
             NSLog(@"Did EVoiceRecognitionClientWorkStatusFlushData");
+            
+            if (aObj) {
+                if (self.callbackId) {
+                    
+                    NSDictionary *myDict;
+                    
+                    myDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                              [self getDescriptionForDic:aObj ], @"text",
+                              @NO, @"finish",
+                              @NO, @"error",nil];
+                    
+                    // NSString json = [self getDescriptionForDic:aObj];
+                    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary: myDict];
+                    [result setKeepCallbackAsBool:YES];
+                    //json =[json substringWithRange:NSMakeRange(1,[json length] - 2 )];
+                    //
+                    [self.commandDelegate sendPluginResult:result callbackId:self.callbackId];
+                }
+            }
             break;
         }
         case EVoiceRecognitionClientWorkStatusFinish: {
             if (aObj) {
-             if (self.callbackId) {
-
-                // NSString json = [self getDescriptionForDic:aObj];
-                CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[self getDescriptionForDic:aObj]];
-                [result setKeepCallbackAsBool:YES];
-                 //json =[json substringWithRange:NSMakeRange(1,[json length] - 2 )];
-//
-                [self.commandDelegate sendPluginResult:result callbackId:self.callbackId];
-               }
+                if (self.callbackId) {
+                    
+                    NSDictionary *finishDic;
+                    finishDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 [self getDescriptionForDic:aObj], @"text",
+                                 @YES, @"finish",
+                                 @NO, @"error",nil];
+                    
+                    
+                    // NSString json = [self getDescriptionForDic:aObj];
+                    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary: finishDic];
+                    // NSString json = [self getDescriptionForDic:aObj];
+                    //                CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[self getDescriptionForDic:aObj]];
+                    [result setKeepCallbackAsBool:NO];
+                    //json =[json substringWithRange:NSMakeRange(1,[json length] - 2 )];
+                    //
+                    [self.commandDelegate sendPluginResult:result callbackId:self.callbackId];
+                }
             }
             break;
         }
@@ -276,21 +304,21 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 - (NSFileHandle *)createFileHandleWithName:(NSString *)aFileName isAppend:(BOOL)isAppend {
     NSFileHandle *fileHandle = nil;
     NSString *fileName = [self getFilePath:aFileName];
-
+    
     int fd = -1;
     if (fileName) {
         if ([[NSFileManager defaultManager] fileExistsAtPath:fileName]&& !isAppend) {
             [[NSFileManager defaultManager] removeItemAtPath:fileName error:nil];
         }
-
+        
         int flags = O_WRONLY | O_APPEND | O_CREAT;
         fd = open([fileName fileSystemRepresentation], flags, 0644);
     }
-
+    
     if (fd != -1) {
         fileHandle = [[NSFileHandle alloc] initWithFileDescriptor:fd closeOnDealloc:YES];
     }
-
+    
     return fileHandle;
 }
 
@@ -306,10 +334,10 @@ NSString* SECRET_KEY_1 = @"9oHZPMLgc0BM9a4m3DhpHUhGSqYvsrAF";
 
 - (NSString *)getDescriptionForDic:(NSDictionary *)dic {
     if (dic) {
-//        return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dic
-//                                                                              options:NSJSONWritingPrettyPrinted
-//                                                                                error:nil] encoding:NSUTF8StringEncoding];
-
+        //        return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dic
+        //                                                                              options:NSJSONWritingPrettyPrinted
+        //                                                                                error:nil] encoding:NSUTF8StringEncoding];
+        
         NSLog(@"*************** %@" , [(NSArray *)[dic objectForKey: @"results_recognition"] objectAtIndex:0]);
         return [(NSArray *)[dic objectForKey: @"results_recognition"] objectAtIndex:0];
     }

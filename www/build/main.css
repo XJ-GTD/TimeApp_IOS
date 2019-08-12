@@ -4874,6 +4874,10 @@ textarea::-webkit-input-placeholder {
   padding-left: 2px;
 }
 
+textarea::-moz-placeholder {
+  padding-left: 2px;
+}
+
 textarea::-ms-input-placeholder {
   padding-left: 2px;
 }
@@ -31092,6 +31096,16 @@ pointcomponent .inputioc img {
   }
 }
 
+pointcomponent .jsai {
+  position: absolute;
+  bottom: 100px;
+  display: block;
+  color: #da4739;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px;
+}
+
 BackComponent canvas {
   display: block;
   width: 100%;
@@ -31111,6 +31125,11 @@ card-list ion-card wi {
   font-size: 3.4rem;
 }
 
+card-list ion-card {
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+}
+
 ConfirmboxComponent {
   margin: 10px;
 }
@@ -31121,6 +31140,10 @@ ConfirmboxComponent .msg-lbl {
   text-align: center;
   color: white;
   font-weight: 500;
+}
+
+date-picker .picker-wrapper {
+  position: relative;
 }
 
 ion-calendar-month {
@@ -32110,38 +32133,284 @@ LoadingComponent canvas {
   left: 0;
 }
 
-scroll-select {
-  width: 100vmin;
+message-send .text-message {
+  padding: 0 1rem;
 }
 
-scroll-select .img-btn {
+message-send .text-message .text-input-ios {
+  color: #fff;
+  background-color: #7396a7;
+  margin: .4rem 8px .4rem 0;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: 1.6rem;
+  line-height: 2.2em;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+message-send button.button-ios {
+  color: #fff;
+  height: 2.2em;
+}
+
+message-send button.button-ios[icon-only] ion-icon {
   background-color: transparent;
 }
 
-scroll-select .slide-btn {
+message-send button.button-ios.press-button, message-send button[block].button-ios.press-button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: calc(100% - 8.6em);
+  background-color: #7396a7;
+  color: #fff;
+}
+
+radio-select {
+  width: 100vmin;
+}
+
+radio-select label {
+  margin-right: 12px;
+}
+
+radio-select button, radio-select .button-ios, radio-select .button-clear-ios {
+  background-color: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+}
+
+radio-select button.checked, radio-select .button-ios.checked, radio-select .button-clear-ios.checked {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-select button.checked:first-child, radio-select .button-ios.checked:first-child, radio-select .button-clear-ios.checked:first-child {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-select button.checked:last-child, radio-select .button-ios.checked:last-child, radio-select .button-clear-ios.checked:last-child {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-select button:first-child, radio-select .button-ios:first-child, radio-select .button-clear-ios:first-child {
+  border: 1.5px solid #fff;
+  border-right: 0px;
+  border-top-left-radius: 10vmin;
+  border-bottom-left-radius: 10vmin;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #fff;
+}
+
+radio-select button:last-child, radio-select .button-ios:last-child, radio-select .button-clear-ios:last-child {
+  border: 1.5px solid #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10vmin;
+  border-bottom-right-radius: 10vmin;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #fff;
+}
+
+radio-spinner {
+  width: 100vmin;
+}
+
+radio-spinner label {
+  margin-right: 12px;
+}
+
+radio-spinner button, radio-spinner .button-ios, radio-spinner .button-clear-ios {
+  background-color: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+}
+
+radio-spinner button.checked, radio-spinner .button-ios.checked, radio-spinner .button-clear-ios.checked {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-spinner button.checked:first-child, radio-spinner .button-ios.checked:first-child, radio-spinner .button-clear-ios.checked:first-child {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-spinner button.checked:last-child, radio-spinner .button-ios.checked:last-child, radio-spinner .button-clear-ios.checked:last-child {
+  background-color: #fff;
+  color: #3c4d55;
+}
+
+radio-spinner button:first-child, radio-spinner .button-ios:first-child, radio-spinner .button-clear-ios:first-child {
+  border: 1.5px solid #fff;
+  border-right: 0px;
+  border-top-left-radius: 10vmin;
+  border-bottom-left-radius: 10vmin;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #fff;
+}
+
+radio-spinner button:last-child, radio-spinner .button-ios:last-child, radio-spinner .button-clear-ios:last-child {
+  border: 1.5px solid #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10vmin;
+  border-bottom-right-radius: 10vmin;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #fff;
+}
+
+recording {
+  position: absolute;
+  color: #fff;
+  left: calc(calc(100vmin / 2) - calc(34vmin / 2));
+  top: calc(calc(100vmax / 2) - calc(34vmin / 2));
+}
+
+recording ion-grid.grid {
+  display: none;
+  background-color: #111;
+  opacity: 0.85;
+  width: 34vmin;
+  height: 34vmin;
+  border-radius: 6px;
+}
+
+recording ion-grid.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+recording ion-icon {
+  font-size: 3.6em;
+  margin-right: 8px;
+}
+
+scroll-range-picker {
+  width: 100vmin;
+}
+
+scroll-range-picker .scroll-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: calc(100vmin * (180 / 1242) + 32px);
+  position: relative;
+}
+
+scroll-range-picker .scroll-box-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  will-change: scroll-position;
+  contain: size style layout;
+}
+
+scroll-range-picker .scroll-box-pointer {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px 0;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+scroll-range-picker .scroll-box-pointer .scroll-box-zoom-wrapper {
+  margin: 0;
+}
+
+scroll-range-picker .scroll-box-pointer .scroll-box-zoom-wrapper,
+scroll-range-picker .scroll-box-pointer .svg-scroller {
+  width: 100vmin;
+  height: 100%;
+}
+
+scroll-range-picker .scroll-box-zoom-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  float: left;
+  margin: 0 -16.5px;
+  overflow: hidden;
+}
+
+scroll-range-picker .scroll-box-pointer .svg-scroller,
+scroll-range-picker .scroll-box-pointer #timerange-picker-pointer {
+  margin: 0;
+  height: 100%;
+}
+
+scroll-select, scroll-select-option {
+  width: 100vmin;
+}
+
+scroll-select .img-btn, scroll-select-option .img-btn {
+  background-color: transparent;
+}
+
+scroll-select .slide-btn, scroll-select-option .slide-btn {
   height: 6.8vmin;
   width: 1.2vmin;
 }
 
-scroll-select div.option {
+scroll-select div.option, scroll-select-option div.option {
   position: relative;
   width: 100vmin;
   text-align: center;
 }
 
-scroll-select div.option.option-3 {
+scroll-select div.option.option-3, scroll-select-option div.option.option-3 {
   width: calc(100vmin / 3);
 }
 
-scroll-select div.option.option-5 {
+scroll-select div.option.option-5, scroll-select-option div.option.option-5 {
   width: calc(100vmin / 5);
 }
 
-scroll-select div.option.option-7 {
+scroll-select div.option.option-7, scroll-select-option div.option.option-7 {
   width: calc(100vmin / 7);
 }
 
-scroll-select div.selected-circle {
+scroll-select div.selected-circle, scroll-select-option div.selected-circle {
   top: calc(-3.5vmin - 3px);
   left: calc((100vmin - 14vmin) / 2 - 27px);
   position: absolute;
@@ -32155,7 +32424,7 @@ scroll-select div.selected-circle {
   justify-content: center;
 }
 
-scroll-select div.selected-circle > div {
+scroll-select div.selected-circle > div, scroll-select-option div.selected-circle > div {
   height: 14vmin;
   width: 14vmin;
   background-color: #000;
@@ -32163,7 +32432,7 @@ scroll-select div.selected-circle > div {
   border-radius: 50%;
 }
 
-scroll-select .scroll-box {
+scroll-select .scroll-box, scroll-select-option .scroll-box {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -32172,7 +32441,7 @@ scroll-select .scroll-box {
   position: relative;
 }
 
-scroll-select .scroll-box-content {
+scroll-select .scroll-box-content, scroll-select-option .scroll-box-content {
   overflow-x: auto;
   overflow-y: hidden;
   left: 0;
@@ -32180,18 +32449,25 @@ scroll-select .scroll-box-content {
   top: 0;
   bottom: 0;
   position: absolute;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-overflow-scrolling: touch;
   will-change: scroll-position;
   contain: size style layout;
   z-index: 2;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-scroll-select .scroll-box.scroll-without-button .scroll-box-zoom-wrapper {
+scroll-select .scroll-box.scroll-without-button .scroll-box-zoom-wrapper, scroll-select-option .scroll-box.scroll-without-button .scroll-box-zoom-wrapper {
   margin: 0 -27px;
 }
 
-scroll-select .scroll-box-zoom-wrapper {
+scroll-select .scroll-box-zoom-wrapper, scroll-select-option .scroll-box-zoom-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32201,7 +32477,42 @@ scroll-select .scroll-box-zoom-wrapper {
   flex-wrap: nowrap;
   float: left;
   margin: 0 -43.5px;
-  overflow: hidden;
+}
+
+speech-bubble .outground {
+  background-color: #222;
+  width: 120px;
+  height: 32px;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 12px 0;
+}
+
+speech-bubble .outground ion-icon {
+  font-size: 1.4em;
+  line-height: 0.9;
+}
+
+speech-bubble .outground span {
+  padding-left: 4px;
+  position: absolute;
+  margin-top: -1px;
+}
+
+speech-bubble .outtitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.5vmin;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 page-al {
@@ -32545,6 +32856,231 @@ page-br .scroll-content {
   overflow-y: hidden;
 }
 
+page-bz ion-header ion-toolbar .toolbar-background, page-bz .toolbar-background-md, page-bz .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-bz ion-header {
+  padding: 4px 20px;
+}
+
+page-bz ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-bz .img-header-left, page-bz .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-bz .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-bz .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-bz ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-bz .memo-set {
+  padding: 0 12px;
+}
+
+page-bz .memo-set .text-input-ios {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+page-bz .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-bz .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-bz .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-bz .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-bz .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-bz .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-bz .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-bz .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
+}
+
+page-cf ion-header ion-toolbar .toolbar-background, page-cf .toolbar-background-md, page-cf .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-cf ion-header {
+  padding: 4px 20px;
+}
+
+page-cf ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-cf .img-header-left, page-cf .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-cf .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-cf .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-cf ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-cf .memo-set {
+  padding: 0 12px;
+}
+
+page-cf .memo-set .text-input-ios {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+page-cf ion-grid {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-cf ion-grid.h100 {
+  height: 100%;
+}
+
+page-cf ion-grid.ph15 {
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+}
+
+page-cf p.title {
+  font-size: 1.7rem;
+}
+
+page-cf .endwith {
+  margin-left: calc(-1.4rem - 14px);
+}
+
+page-cf .endwith .item-block {
+  min-height: 2.4rem;
+}
+
+page-cf .endwith .item-ios {
+  background-color: transparent;
+  padding-left: 0px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+page-cf .endwith .item-ios .label-ios {
+  margin: 0px 8px 0px 0;
+}
+
+page-cf .endwith .item-ios .radio-ios[item-left], page-cf .endwith .item-ios .radio-ios[item-start] {
+  margin: 0px 11px 0px 3px;
+}
+
+page-cf .endwith .item-radio-checked.item-ios ion-label {
+  color: #fff;
+}
+
+page-cf .endwith .radio-ios .radio-checked .radio-inner {
+  border-color: #fff;
+}
+
+page-cf ion-label.inline {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-cf ion-label div.inlabel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: calc(2.1rem + 3px + 9.6px + 10px);
+  margin-right: 12px;
+}
+
+page-cf .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-cf .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-cf .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-cf .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-cf .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-cf .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-cf .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-cf .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
+}
+
 page-da {
   background-color: #394a51;
 }
@@ -32754,6 +33290,241 @@ page-da .scroll-content {
   overflow-y: auto;
 }
 
+page-da .has-refresher > .scroll-content {
+  border-top: 1px solid #394a51;
+}
+
+page-da .refresher-pulling-icon, page-da .refresher-refreshing-icon,
+page-da .refresher-pulling-text, page-da .refresher-refreshing-text {
+  color: #fff;
+}
+
+page-da ion-refresher {
+  height: 120px;
+}
+
+page-do {
+  background-color: #394a51;
+}
+
+page-do ion-slide.scroll-y {
+  overflow-y: scroll;
+}
+
+page-do ion-card, page-do .card-ios {
+  background-color: #3c4d55;
+  position: relative;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+}
+
+page-do .card-title {
+  position: relative;
+  background-color: #3c4d55;
+  font-size: 1.5rem;
+  width: 100%;
+  color: #fff;
+}
+
+page-do .card-subtitle {
+  background-color: #3c4d55;
+  font-size: 1.0rem;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+page-do .typegroup, page-do .status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-do .label-ios {
+  margin: 0 0 0 0;
+}
+
+page-do .radio-ios {
+  margin: 0 15px;
+}
+
+page-do .w-auto {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+page-do .grid {
+  padding: 0;
+}
+
+page-do .grid .row {
+  height: 100%;
+}
+
+page-do ion-grid.h70 {
+  height: 70vmax;
+}
+
+page-do ion-row.h100 {
+  height: 100%;
+}
+
+page-do .img-logo {
+  width: 30vmin;
+  height: 30vmin;
+  border-radius: 15px;
+}
+
+page-do h1.app-title {
+  font-size: 24px;
+}
+
+page-do h3.app-description {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #666666;
+}
+
+page-do span.app-profiles {
+  color: #666666;
+}
+
+page-do ion-header ion-toolbar .toolbar-background, page-do .toolbar-background-md, page-do .toolbar-background-ios {
+  background-color: #394a51;
+}
+
+page-do ion-header {
+  padding: 4px 20px;
+}
+
+page-do ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-do ion-footer {
+  padding: 4px 20px;
+}
+
+page-do .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-do .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-do .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-do .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-do .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-do .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-do .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-do .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
+}
+
+page-do .img-header-left, page-do .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-do .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-do .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-do ion-content.content {
+  background-color: #394a51;
+  color: #fff;
+}
+
+page-do .color-dot {
+  margin: 4px auto;
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+page-do list list-ios {
+  overflow-y: auto;
+}
+
+page-do .img-content-plan {
+  width: 2vmin;
+  height: 2vmin;
+}
+
+page-do .img-content-refresh {
+  width: 3.5vmin;
+  height: 3vmin;
+  margin-left: 0;
+}
+
+page-do .content-download {
+  color: white;
+  margin-left: 0;
+}
+
+page-do .item-ios .item-button {
+  margin-right: 0;
+}
+
+page-do .plan-none {
+  margin-left: 16px;
+  font-size: 11px;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+page-do .scroll-content {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+page-do .has-refresher > .scroll-content {
+  border-top: 1px solid #394a51;
+}
+
+page-do .refresher-pulling-icon, page-do .refresher-refreshing-icon,
+page-do .refresher-pulling-text, page-do .refresher-refreshing-text {
+  color: #fff;
+}
+
+page-do ion-refresher {
+  height: 120px;
+}
+
 page-dr {
   background-color: black;
 }
@@ -32852,6 +33623,106 @@ page-dr .scroll-content {
   overflow-y: auto;
 }
 
+page-dz ion-header ion-toolbar .toolbar-background, page-dz .toolbar-background-md, page-dz .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-dz ion-header {
+  padding: 4px 20px;
+}
+
+page-dz ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-dz .img-header-left, page-dz .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-dz .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-dz .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-dz ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-dz ion-searchbar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+}
+
+page-dz .searchbar-ios {
+  background-color: transparent;
+}
+
+page-dz baidu-map {
+  width: 100vmin;
+  height: 100vmax;
+}
+
+page-dz baidu-map .anchorBL {
+  display: none;
+}
+
+page-dz .fab-ios {
+  background-color: #394a51;
+}
+
+page-dz .fab-ios.activated {
+  background-color: rgba(60, 77, 85, 0.8);
+}
+
+page-dz .fab ion-icon {
+  font-size: 4.4rem;
+}
+
+page-dz .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-dz .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-dz .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-dz .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-dz .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-dz .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-dz .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-dz .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
+}
+
 page-fd {
   background-color: black;
 }
@@ -32926,6 +33797,417 @@ page-fd .fdname {
   font-weight: bold;
 }
 
+page-fo, page-fofirim, page-fogithub, page-fotravisci, page-foshare, page-foconfigure {
+  background-color: black;
+}
+
+page-fo .spinanimation, page-fofirim .spinanimation, page-fogithub .spinanimation, page-fotravisci .spinanimation, page-foshare .spinanimation, page-foconfigure .spinanimation {
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+page-fo .img-content-refresh, page-fofirim .img-content-refresh, page-fogithub .img-content-refresh, page-fotravisci .img-content-refresh, page-foshare .img-content-refresh, page-foconfigure .img-content-refresh {
+  width: 25px;
+}
+
+page-fo .list-header, page-fo .list-header-md, page-fo .list-header-ios, page-fofirim .list-header, page-fofirim .list-header-md, page-fofirim .list-header-ios, page-fogithub .list-header, page-fogithub .list-header-md, page-fogithub .list-header-ios, page-fotravisci .list-header, page-fotravisci .list-header-md, page-fotravisci .list-header-ios, page-foshare .list-header, page-foshare .list-header-md, page-foshare .list-header-ios, page-foconfigure .list-header, page-foconfigure .list-header-md, page-foconfigure .list-header-ios {
+  border: 0;
+  color: #3c4d55;
+}
+
+page-fo ion-header ion-toolbar .toolbar-background, page-fo .toolbar-background-md, page-fo .toolbar-background-ios, page-fofirim ion-header ion-toolbar .toolbar-background, page-fofirim .toolbar-background-md, page-fofirim .toolbar-background-ios, page-fogithub ion-header ion-toolbar .toolbar-background, page-fogithub .toolbar-background-md, page-fogithub .toolbar-background-ios, page-fotravisci ion-header ion-toolbar .toolbar-background, page-fotravisci .toolbar-background-md, page-fotravisci .toolbar-background-ios, page-foshare ion-header ion-toolbar .toolbar-background, page-foshare .toolbar-background-md, page-foshare .toolbar-background-ios, page-foconfigure ion-header ion-toolbar .toolbar-background, page-foconfigure .toolbar-background-md, page-foconfigure .toolbar-background-ios {
+  background-color: black;
+}
+
+page-fo ion-header, page-fofirim ion-header, page-fogithub ion-header, page-fotravisci ion-header, page-foshare ion-header, page-foconfigure ion-header {
+  padding: 4px 20px;
+}
+
+page-fo .img-header-left, page-fofirim .img-header-left, page-fogithub .img-header-left, page-fotravisci .img-header-left, page-foshare .img-header-left, page-foconfigure .img-header-left {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-fo .img-header-right, page-fofirim .img-header-right, page-fogithub .img-header-right, page-fotravisci .img-header-right, page-foshare .img-header-right, page-foconfigure .img-header-right {
+  width: 4.5vmin;
+  height: 1vmin;
+}
+
+page-fo .toolbar-title, page-fofirim .toolbar-title, page-fogithub .toolbar-title, page-fotravisci .toolbar-title, page-foshare .toolbar-title, page-foconfigure .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-fo ion-input, page-fofirim ion-input, page-fogithub ion-input, page-fotravisci ion-input, page-foshare ion-input, page-foconfigure ion-input {
+  font-size: 1.5rem;
+}
+
+page-fo ion-content.content, page-fofirim ion-content.content, page-fogithub ion-content.content, page-fotravisci ion-content.content, page-foshare ion-content.content, page-foconfigure ion-content.content {
+  background-color: black;
+  color: #fff;
+}
+
+page-fo ion-content.content ion-thumbnail, page-fofirim ion-content.content ion-thumbnail, page-fogithub ion-content.content ion-thumbnail, page-fotravisci ion-content.content ion-thumbnail, page-foshare ion-content.content ion-thumbnail, page-foconfigure ion-content.content ion-thumbnail {
+  width: 20vmin;
+  margin: 0 auto;
+}
+
+page-fo ion-content.content ion-thumbnail img, page-fofirim ion-content.content ion-thumbnail img, page-fogithub ion-content.content ion-thumbnail img, page-fotravisci ion-content.content ion-thumbnail img, page-foshare ion-content.content ion-thumbnail img, page-foconfigure ion-content.content ion-thumbnail img {
+  border-radius: 8px;
+}
+
+page-fo ion-content .plan-list-item, page-fofirim ion-content .plan-list-item, page-fogithub ion-content .plan-list-item, page-fotravisci ion-content .plan-list-item, page-foshare ion-content .plan-list-item, page-foconfigure ion-content .plan-list-item {
+  background-color: black;
+  color: #fff;
+  padding-left: 8px;
+  font-size: 1.5rem;
+  min-height: 9vmin;
+}
+
+page-fo ion-content .plan-list-item ion-icon, page-fo ion-content .plan-list-item img, page-fofirim ion-content .plan-list-item ion-icon, page-fofirim ion-content .plan-list-item img, page-fogithub ion-content .plan-list-item ion-icon, page-fogithub ion-content .plan-list-item img, page-fotravisci ion-content .plan-list-item ion-icon, page-fotravisci ion-content .plan-list-item img, page-foshare ion-content .plan-list-item ion-icon, page-foshare ion-content .plan-list-item img, page-foconfigure ion-content .plan-list-item ion-icon, page-foconfigure ion-content .plan-list-item img {
+  width: 2rem;
+}
+
+page-fo .golden-height, page-fofirim .golden-height, page-fogithub .golden-height, page-fotravisci .golden-height, page-foshare .golden-height, page-foconfigure .golden-height {
+  height: calc(2em + calc(calc(100vmax - 100vmin) / 1.5));
+}
+
+page-fo .golden-height scroll-select, page-fofirim .golden-height scroll-select, page-fogithub .golden-height scroll-select, page-fotravisci .golden-height scroll-select, page-foshare .golden-height scroll-select, page-foconfigure .golden-height scroll-select {
+  margin: 0 -26px;
+}
+
+page-fo .golden-height scroll-select > div.grid, page-fofirim .golden-height scroll-select > div.grid, page-fogithub .golden-height scroll-select > div.grid, page-fotravisci .golden-height scroll-select > div.grid, page-foshare .golden-height scroll-select > div.grid, page-foconfigure .golden-height scroll-select > div.grid {
+  padding: 0;
+}
+
+page-fo .golden-height scroll-select > div.grid > div.row > div.scroll-box, page-fofirim .golden-height scroll-select > div.grid > div.row > div.scroll-box, page-fogithub .golden-height scroll-select > div.grid > div.row > div.scroll-box, page-fotravisci .golden-height scroll-select > div.grid > div.row > div.scroll-box, page-foshare .golden-height scroll-select > div.grid > div.row > div.scroll-box, page-foconfigure .golden-height scroll-select > div.grid > div.row > div.scroll-box {
+  height: calc(calc(2em + calc(calc(100vmax - 100vmin) / 1.5)) - 10px);
+}
+
+page-fo .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content, page-fofirim .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content, page-fogithub .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content, page-fotravisci .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content, page-foshare .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content, page-foconfigure .golden-height scroll-select > div.grid > div.row > div.scroll-box > div.scroll-box-content {
+  overflow-x: visible;
+  overflow-y: scroll;
+}
+
+page-fo .golden-height scroll-select .scroll-box-zoom-wrapper, page-fofirim .golden-height scroll-select .scroll-box-zoom-wrapper, page-fogithub .golden-height scroll-select .scroll-box-zoom-wrapper, page-fotravisci .golden-height scroll-select .scroll-box-zoom-wrapper, page-foshare .golden-height scroll-select .scroll-box-zoom-wrapper, page-foconfigure .golden-height scroll-select .scroll-box-zoom-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-fo .golden-height scroll-select scroll-select-option > div.option, page-fofirim .golden-height scroll-select scroll-select-option > div.option, page-fogithub .golden-height scroll-select scroll-select-option > div.option, page-fotravisci .golden-height scroll-select scroll-select-option > div.option, page-foshare .golden-height scroll-select scroll-select-option > div.option, page-foconfigure .golden-height scroll-select scroll-select-option > div.option {
+  padding: 0 5px;
+}
+
+page-fo .golden-height scroll-select scroll-select-option ion-card.card-ios, page-fofirim .golden-height scroll-select scroll-select-option ion-card.card-ios, page-fogithub .golden-height scroll-select scroll-select-option ion-card.card-ios, page-fotravisci .golden-height scroll-select scroll-select-option ion-card.card-ios, page-foshare .golden-height scroll-select scroll-select-option ion-card.card-ios, page-foconfigure .golden-height scroll-select scroll-select-option ion-card.card-ios {
+  padding: 0 8px;
+}
+
+page-fo .golden-height scroll-select scroll-select-option p > ion-thumbnail, page-fofirim .golden-height scroll-select scroll-select-option p > ion-thumbnail, page-fogithub .golden-height scroll-select scroll-select-option p > ion-thumbnail, page-fotravisci .golden-height scroll-select scroll-select-option p > ion-thumbnail, page-foshare .golden-height scroll-select scroll-select-option p > ion-thumbnail, page-foconfigure .golden-height scroll-select scroll-select-option p > ion-thumbnail {
+  display: inline-block;
+  width: calc(1.6rem);
+  margin: 0 auto;
+}
+
+page-fo .golden-height scroll-select scroll-select-option p > ion-thumbnail img, page-fofirim .golden-height scroll-select scroll-select-option p > ion-thumbnail img, page-fogithub .golden-height scroll-select scroll-select-option p > ion-thumbnail img, page-fotravisci .golden-height scroll-select scroll-select-option p > ion-thumbnail img, page-foshare .golden-height scroll-select scroll-select-option p > ion-thumbnail img, page-foconfigure .golden-height scroll-select scroll-select-option p > ion-thumbnail img {
+  border-radius: 2px;
+}
+
+page-fo .golden-margin, page-fofirim .golden-margin, page-fogithub .golden-margin, page-fotravisci .golden-margin, page-foshare .golden-margin, page-foconfigure .golden-margin {
+  margin-bottom: calc(calc(100vmax - 100vmin) / 1.5);
+}
+
+page-fo ion-card.card-ios, page-fofirim ion-card.card-ios, page-fogithub ion-card.card-ios, page-fotravisci ion-card.card-ios, page-foshare ion-card.card-ios, page-foconfigure ion-card.card-ios {
+  background-color: transparent;
+}
+
+page-fo ion-card.card-ios ion-card-header, page-fofirim ion-card.card-ios ion-card-header, page-fogithub ion-card.card-ios ion-card-header, page-fotravisci ion-card.card-ios ion-card-header, page-foshare ion-card.card-ios ion-card-header, page-foconfigure ion-card.card-ios ion-card-header {
+  color: #fafbfc;
+}
+
+page-fo ion-card.card-ios ion-card-content p, page-fofirim ion-card.card-ios ion-card-content p, page-fogithub ion-card.card-ios ion-card-content p, page-fotravisci ion-card.card-ios ion-card-content p, page-foshare ion-card.card-ios ion-card-content p, page-foconfigure ion-card.card-ios ion-card-content p {
+  color: #fafbfc;
+}
+
+page-fo ion-card.card-ios button.button-clear-ios, page-fofirim ion-card.card-ios button.button-clear-ios, page-fogithub ion-card.card-ios button.button-clear-ios, page-fotravisci ion-card.card-ios button.button-clear-ios, page-foshare ion-card.card-ios button.button-clear-ios, page-foconfigure ion-card.card-ios button.button-clear-ios {
+  color: #fafbfc;
+}
+
+page-fo .h1-danger, page-fofirim .h1-danger, page-fogithub .h1-danger, page-fotravisci .h1-danger, page-foshare .h1-danger, page-foconfigure .h1-danger {
+  color: #f53d3d;
+}
+
+page-fo .h1-lightgray, page-fofirim .h1-lightgray, page-fogithub .h1-lightgray, page-fotravisci .h1-lightgray, page-foshare .h1-lightgray, page-foconfigure .h1-lightgray {
+  color: #9b9b9b;
+}
+
+page-fo .full-width, page-fofirim .full-width, page-fogithub .full-width, page-fotravisci .full-width, page-foshare .full-width, page-foconfigure .full-width {
+  margin: 0 -26px;
+  padding: 10vmin 0 15vmin 0;
+  min-height: 46vmin;
+}
+
+page-fo .fir-color, page-fofirim .fir-color, page-fogithub .fir-color, page-fotravisci .fir-color, page-foshare .fir-color, page-foconfigure .fir-color {
+  background-color: #ffd200;
+}
+
+page-fo .github-color, page-fofirim .github-color, page-fogithub .github-color, page-fotravisci .github-color, page-foshare .github-color, page-foconfigure .github-color {
+  background-color: #fafbfc;
+}
+
+page-fo .travisci-color, page-fofirim .travisci-color, page-fogithub .travisci-color, page-fotravisci .travisci-color, page-foshare .travisci-color, page-foconfigure .travisci-color {
+  background-color: #39aa56;
+}
+
+page-fo .travisci-logo, page-fofirim .travisci-logo, page-fogithub .travisci-logo, page-fotravisci .travisci-logo, page-foshare .travisci-logo, page-foconfigure .travisci-logo {
+  width: 50vmin;
+}
+
+page-fo .github-logo, page-fofirim .github-logo, page-fogithub .github-logo, page-fotravisci .github-logo, page-foshare .github-logo, page-foconfigure .github-logo {
+  font-size: 8rem;
+  color: #111;
+}
+
+page-fo .fir-logo, page-fofirim .fir-logo, page-fogithub .fir-logo, page-fotravisci .fir-logo, page-foshare .fir-logo, page-foconfigure .fir-logo {
+  width: 20vmin;
+}
+
+page-fo .fir-plane, page-fofirim .fir-plane, page-fogithub .fir-plane, page-fotravisci .fir-plane, page-foshare .fir-plane, page-foconfigure .fir-plane {
+  width: 50vmin;
+  margin-left: 3vmin;
+  margin-top: -3vmin;
+}
+
+page-fo .rorate-proreller, page-fofirim .rorate-proreller, page-fogithub .rorate-proreller, page-fotravisci .rorate-proreller, page-foshare .rorate-proreller, page-foconfigure .rorate-proreller {
+  position: absolute;
+  -webkit-animation: aniplane .15s linear infinite;
+}
+
+page-fo .fir-propeller, page-fofirim .fir-propeller, page-fogithub .fir-propeller, page-fotravisci .fir-propeller, page-foshare .fir-propeller, page-foconfigure .fir-propeller {
+  width: 10vmin;
+  -webkit-transform: rotateY(-28deg);
+  transform: rotateY(-28deg);
+}
+
+@-webkit-keyframes aniplane {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+page-fo .github-help, page-fofirim .github-help, page-fogithub .github-help, page-fotravisci .github-help, page-foshare .github-help, page-foconfigure .github-help {
+  position: absolute;
+  margin-top: 18vmin;
+}
+
+page-fo .github-help button[ion-button].border, page-fofirim .github-help button[ion-button].border, page-fogithub .github-help button[ion-button].border, page-fotravisci .github-help button[ion-button].border, page-foshare .github-help button[ion-button].border, page-foconfigure .github-help button[ion-button].border {
+  border: 1.5px solid #111;
+}
+
+page-fo .travisci-help, page-fofirim .travisci-help, page-fogithub .travisci-help, page-fotravisci .travisci-help, page-foshare .travisci-help, page-foconfigure .travisci-help {
+  position: absolute;
+  margin-top: 18vmin;
+}
+
+page-fo .travisci-help button[ion-button].border, page-fofirim .travisci-help button[ion-button].border, page-fogithub .travisci-help button[ion-button].border, page-fotravisci .travisci-help button[ion-button].border, page-foshare .travisci-help button[ion-button].border, page-foconfigure .travisci-help button[ion-button].border {
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+
+page-fo .firim-help, page-fofirim .firim-help, page-fogithub .firim-help, page-fotravisci .firim-help, page-foshare .firim-help, page-foconfigure .firim-help {
+  position: absolute;
+  margin-top: 18vmin;
+}
+
+page-fo .firim-help button[ion-button].border, page-fofirim .firim-help button[ion-button].border, page-fogithub .firim-help button[ion-button].border, page-fotravisci .firim-help button[ion-button].border, page-foshare .firim-help button[ion-button].border, page-foconfigure .firim-help button[ion-button].border {
+  border: 1.5px solid #111;
+}
+
+page-fo button[ion-button].border, page-fofirim button[ion-button].border, page-fogithub button[ion-button].border, page-fotravisci button[ion-button].border, page-foshare button[ion-button].border, page-foconfigure button[ion-button].border {
+  border: 1.5px solid #fff;
+}
+
+page-fo p.p5, page-fofirim p.p5, page-fogithub p.p5, page-fotravisci p.p5, page-foshare p.p5, page-foconfigure p.p5 {
+  padding: 5px;
+}
+
+page-fo .plan-list-item ion-note, page-fofirim .plan-list-item ion-note, page-fogithub .plan-list-item ion-note, page-fotravisci .plan-list-item ion-note, page-foshare .plan-list-item ion-note, page-foconfigure .plan-list-item ion-note {
+  padding-right: 25px;
+}
+
+page-fo .plan-list-item ion-spinner, page-fofirim .plan-list-item ion-spinner, page-fogithub .plan-list-item ion-spinner, page-fotravisci .plan-list-item ion-spinner, page-foshare .plan-list-item ion-spinner, page-foconfigure .plan-list-item ion-spinner {
+  padding-right: 25px;
+}
+
+page-fo ion-list.list-ios, page-fofirim ion-list.list-ios, page-fogithub ion-list.list-ios, page-fotravisci ion-list.list-ios, page-foshare ion-list.list-ios, page-foconfigure ion-list.list-ios {
+  width: 100%;
+}
+
+page-fo ion-list.list-ios ion-item-sliding, page-fofirim ion-list.list-ios ion-item-sliding, page-fogithub ion-list.list-ios ion-item-sliding, page-fotravisci ion-list.list-ios ion-item-sliding, page-foshare ion-list.list-ios ion-item-sliding, page-foconfigure ion-list.list-ios ion-item-sliding {
+  background-color: black;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+page-fo ion-list.list-ios ion-item-sliding ion-item.item-ios, page-fofirim ion-list.list-ios ion-item-sliding ion-item.item-ios, page-fogithub ion-list.list-ios ion-item-sliding ion-item.item-ios, page-fotravisci ion-list.list-ios ion-item-sliding ion-item.item-ios, page-foshare ion-list.list-ios ion-item-sliding ion-item.item-ios, page-foconfigure ion-list.list-ios ion-item-sliding ion-item.item-ios {
+  background-color: black;
+}
+
+page-fo ion-list.list-ios .item-ios, page-fofirim ion-list.list-ios .item-ios, page-fogithub ion-list.list-ios .item-ios, page-fotravisci ion-list.list-ios .item-ios, page-foshare ion-list.list-ios .item-ios, page-foconfigure ion-list.list-ios .item-ios {
+  background-color: transparent;
+  color: #fff;
+}
+
+page-fo ion-list.list-ios .item-ios h2 ion-icon.icon-ios, page-fofirim ion-list.list-ios .item-ios h2 ion-icon.icon-ios, page-fogithub ion-list.list-ios .item-ios h2 ion-icon.icon-ios, page-fotravisci ion-list.list-ios .item-ios h2 ion-icon.icon-ios, page-foshare ion-list.list-ios .item-ios h2 ion-icon.icon-ios, page-foconfigure ion-list.list-ios .item-ios h2 ion-icon.icon-ios {
+  line-height: 1.4;
+  font-size: 1.7rem;
+}
+
+page-fo ion-list.list-ios .item-ios h2 ion-thumbnail, page-fofirim ion-list.list-ios .item-ios h2 ion-thumbnail, page-fogithub ion-list.list-ios .item-ios h2 ion-thumbnail, page-fotravisci ion-list.list-ios .item-ios h2 ion-thumbnail, page-foshare ion-list.list-ios .item-ios h2 ion-thumbnail, page-foconfigure ion-list.list-ios .item-ios h2 ion-thumbnail {
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+}
+
+page-fo ion-list.list-ios .item-ios h2 ion-thumbnail > img, page-fofirim ion-list.list-ios .item-ios h2 ion-thumbnail > img, page-fogithub ion-list.list-ios .item-ios h2 ion-thumbnail > img, page-fotravisci ion-list.list-ios .item-ios h2 ion-thumbnail > img, page-foshare ion-list.list-ios .item-ios h2 ion-thumbnail > img, page-foconfigure ion-list.list-ios .item-ios h2 ion-thumbnail > img {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 2px;
+}
+
+page-fo ion-list.list-ios .item-ios h3 ion-icon.icon-ios, page-fofirim ion-list.list-ios .item-ios h3 ion-icon.icon-ios, page-fogithub ion-list.list-ios .item-ios h3 ion-icon.icon-ios, page-fotravisci ion-list.list-ios .item-ios h3 ion-icon.icon-ios, page-foshare ion-list.list-ios .item-ios h3 ion-icon.icon-ios, page-foconfigure ion-list.list-ios .item-ios h3 ion-icon.icon-ios {
+  line-height: 1.4;
+  font-size: 1.4rem;
+}
+
+page-fo ion-list.list-ios .item-ios h3 ion-thumbnail, page-fofirim ion-list.list-ios .item-ios h3 ion-thumbnail, page-fogithub ion-list.list-ios .item-ios h3 ion-thumbnail, page-fotravisci ion-list.list-ios .item-ios h3 ion-thumbnail, page-foshare ion-list.list-ios .item-ios h3 ion-thumbnail, page-foconfigure ion-list.list-ios .item-ios h3 ion-thumbnail {
+  width: 1.7rem;
+  height: 1.7rem;
+  min-width: 1.7rem;
+  min-height: 1.7rem;
+  position: absolute;
+}
+
+page-fo ion-list.list-ios .item-ios h3 ion-thumbnail > img, page-fofirim ion-list.list-ios .item-ios h3 ion-thumbnail > img, page-fogithub ion-list.list-ios .item-ios h3 ion-thumbnail > img, page-fotravisci ion-list.list-ios .item-ios h3 ion-thumbnail > img, page-foshare ion-list.list-ios .item-ios h3 ion-thumbnail > img, page-foconfigure ion-list.list-ios .item-ios h3 ion-thumbnail > img {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 2px;
+}
+
+page-fo ion-list.list-ios .item-ios div.avatars, page-fofirim ion-list.list-ios .item-ios div.avatars, page-fogithub ion-list.list-ios .item-ios div.avatars, page-fotravisci ion-list.list-ios .item-ios div.avatars, page-foshare ion-list.list-ios .item-ios div.avatars, page-foconfigure ion-list.list-ios .item-ios div.avatars {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-fo ion-list.list-ios .item-ios div.avatars ion-avatar, page-fofirim ion-list.list-ios .item-ios div.avatars ion-avatar, page-fogithub ion-list.list-ios .item-ios div.avatars ion-avatar, page-fotravisci ion-list.list-ios .item-ios div.avatars ion-avatar, page-foshare ion-list.list-ios .item-ios div.avatars ion-avatar, page-foconfigure ion-list.list-ios .item-ios div.avatars ion-avatar {
+  height: 2.4rem;
+  width: 2.4rem;
+  min-height: 2.4rem;
+  min-width: 2.4rem;
+  margin-right: 4px;
+}
+
+page-fo ion-list.list-ios .item-ios div.avatars ion-avatar img, page-fofirim ion-list.list-ios .item-ios div.avatars ion-avatar img, page-fogithub ion-list.list-ios .item-ios div.avatars ion-avatar img, page-fotravisci ion-list.list-ios .item-ios div.avatars ion-avatar img, page-foshare ion-list.list-ios .item-ios div.avatars ion-avatar img, page-foconfigure ion-list.list-ios .item-ios div.avatars ion-avatar img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+page-fo ion-list.list-ios .item-ios button.button-clear-ios, page-fofirim ion-list.list-ios .item-ios button.button-clear-ios, page-fogithub ion-list.list-ios .item-ios button.button-clear-ios, page-fotravisci ion-list.list-ios .item-ios button.button-clear-ios, page-foshare ion-list.list-ios .item-ios button.button-clear-ios, page-foconfigure ion-list.list-ios .item-ios button.button-clear-ios {
+  color: #f53d3d;
+}
+
+page-fo ion-list.list-ios ion-list-header.item-ios, page-fo ion-list.list-ios ion-list-header.list-header-ios, page-fofirim ion-list.list-ios ion-list-header.item-ios, page-fofirim ion-list.list-ios ion-list-header.list-header-ios, page-fogithub ion-list.list-ios ion-list-header.item-ios, page-fogithub ion-list.list-ios ion-list-header.list-header-ios, page-fotravisci ion-list.list-ios ion-list-header.item-ios, page-fotravisci ion-list.list-ios ion-list-header.list-header-ios, page-foshare ion-list.list-ios ion-list-header.item-ios, page-foshare ion-list.list-ios ion-list-header.list-header-ios, page-foconfigure ion-list.list-ios ion-list-header.item-ios, page-foconfigure ion-list.list-ios ion-list-header.list-header-ios {
+  color: #3c4d55;
+}
+
+page-fo .list-ios > .item-block:last-child, page-fo .list-ios > .item-wrapper:last-child .item-block, page-fofirim .list-ios > .item-block:last-child, page-fofirim .list-ios > .item-wrapper:last-child .item-block, page-fogithub .list-ios > .item-block:last-child, page-fogithub .list-ios > .item-wrapper:last-child .item-block, page-fotravisci .list-ios > .item-block:last-child, page-fotravisci .list-ios > .item-wrapper:last-child .item-block, page-foshare .list-ios > .item-block:last-child, page-foshare .list-ios > .item-wrapper:last-child .item-block, page-foconfigure .list-ios > .item-block:last-child, page-foconfigure .list-ios > .item-wrapper:last-child .item-block {
+  border-bottom: 0;
+}
+
+page-fo .list-ios .item-block .item-inner, page-fofirim .list-ios .item-block .item-inner, page-fogithub .list-ios .item-block .item-inner, page-fotravisci .list-ios .item-block .item-inner, page-foshare .list-ios .item-block .item-inner, page-foconfigure .list-ios .item-block .item-inner {
+  padding-right: 0;
+}
+
+page-fo .item-ios .toggle-ios, page-fofirim .item-ios .toggle-ios, page-fogithub .item-ios .toggle-ios, page-fotravisci .item-ios .toggle-ios, page-foshare .item-ios .toggle-ios, page-foconfigure .item-ios .toggle-ios {
+  padding: 6px 0 5px 16px;
+}
+
+page-fo ion-row h3.h3-center, page-fofirim ion-row h3.h3-center, page-fogithub ion-row h3.h3-center, page-fotravisci ion-row h3.h3-center, page-foshare ion-row h3.h3-center, page-foconfigure ion-row h3.h3-center {
+  text-align: center;
+}
+
+page-fo ion-row p.p-center, page-fofirim ion-row p.p-center, page-fogithub ion-row p.p-center, page-fotravisci ion-row p.p-center, page-foshare ion-row p.p-center, page-foconfigure ion-row p.p-center {
+  text-align: center;
+}
+
+page-fo ion-row div.avatars, page-fofirim ion-row div.avatars, page-fogithub ion-row div.avatars, page-fotravisci ion-row div.avatars, page-foshare ion-row div.avatars, page-foconfigure ion-row div.avatars {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-fo ion-row div.avatars div, page-fofirim ion-row div.avatars div, page-fogithub ion-row div.avatars div, page-fotravisci ion-row div.avatars div, page-foshare ion-row div.avatars div, page-foconfigure ion-row div.avatars div {
+  padding-top: 4px;
+  text-align: center;
+}
+
+page-fo ion-row div.avatars div ion-avatar, page-fofirim ion-row div.avatars div ion-avatar, page-fogithub ion-row div.avatars div ion-avatar, page-fotravisci ion-row div.avatars div ion-avatar, page-foshare ion-row div.avatars div ion-avatar, page-foconfigure ion-row div.avatars div ion-avatar {
+  height: 14vmin;
+  width: 14vmin;
+  min-height: 14vmin;
+  min-width: 14vmin;
+  margin-right: 8px;
+}
+
+page-fo ion-row div.avatars div ion-avatar img, page-fofirim ion-row div.avatars div ion-avatar img, page-fogithub ion-row div.avatars div ion-avatar img, page-fotravisci ion-row div.avatars div ion-avatar img, page-foshare ion-row div.avatars div ion-avatar img, page-foconfigure ion-row div.avatars div ion-avatar img {
+  height: 14vmin;
+  width: 14vmin;
+}
+
+page-fo .toggle-ios.toggle-checked .toggle-icon, page-fofirim .toggle-ios.toggle-checked .toggle-icon, page-fogithub .toggle-ios.toggle-checked .toggle-icon, page-fotravisci .toggle-ios.toggle-checked .toggle-icon, page-foshare .toggle-ios.toggle-checked .toggle-icon, page-foconfigure .toggle-ios.toggle-checked .toggle-icon {
+  background-color: #3c909b;
+  width: 43px;
+  height: 24px;
+}
+
+page-fo .toggle-ios .toggle-icon, page-fofirim .toggle-ios .toggle-icon, page-fogithub .toggle-ios .toggle-icon, page-fotravisci .toggle-ios .toggle-icon, page-foshare .toggle-ios .toggle-icon, page-foconfigure .toggle-ios .toggle-icon {
+  width: 43px;
+  height: 24px;
+}
+
+page-fo .toggle-ios.toggle-checked .toggle-inner,
+page-fo .toggle-ios .toggle-inner, page-fofirim .toggle-ios.toggle-checked .toggle-inner,
+page-fofirim .toggle-ios .toggle-inner, page-fogithub .toggle-ios.toggle-checked .toggle-inner,
+page-fogithub .toggle-ios .toggle-inner, page-fotravisci .toggle-ios.toggle-checked .toggle-inner,
+page-fotravisci .toggle-ios .toggle-inner, page-foshare .toggle-ios.toggle-checked .toggle-inner,
+page-foshare .toggle-ios .toggle-inner, page-foconfigure .toggle-ios.toggle-checked .toggle-inner,
+page-foconfigure .toggle-ios .toggle-inner {
+  height: 20px;
+  width: 20px;
+}
+
+page-fo .scroll-content, page-fofirim .scroll-content, page-fogithub .scroll-content, page-fotravisci .scroll-content, page-foshare .scroll-content, page-foconfigure .scroll-content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 page-fs4c ion-header ion-toolbar .toolbar-background, page-fs4c .toolbar-background-md, page-fs4c .toolbar-background-ios {
   background-color: #3c4d55 !important;
 }
@@ -32934,85 +34216,85 @@ page-fs4c ion-content.content {
   background-color: #3c4d55 !important;
 }
 
-page-fs4c .searchbar-ios, page-fs4g .searchbar-ios {
+page-fs4c .searchbar-ios, page-fs4g .searchbar-ios, page-fs4fo .searchbar-ios {
   background-color: transparent;
 }
 
-page-fs4c .grid, page-fs4g .grid {
+page-fs4c .grid, page-fs4g .grid, page-fs4fo .grid {
   padding: 5px;
 }
 
-page-fs4c .grid .row, page-fs4g .grid .row {
+page-fs4c .grid .row, page-fs4g .grid .row, page-fs4fo .grid .row {
   height: 50px;
 }
 
-page-fs4c .grid .row ion-checkbox, page-fs4g .grid .row ion-checkbox {
+page-fs4c .grid .row ion-checkbox, page-fs4g .grid .row ion-checkbox, page-fs4fo .grid .row ion-checkbox {
   position: relative;
   margin: auto;
 }
 
-page-fs4c .grid .row ion-avatar, page-fs4g .grid .row ion-avatar {
+page-fs4c .grid .row ion-avatar, page-fs4g .grid .row ion-avatar, page-fs4fo .grid .row ion-avatar {
   border-radius: 50%;
   width: 36px;
   height: 36px;
   margin-right: 15px;
 }
 
-page-fs4c .grid .row ion-avatar img, page-fs4g .grid .row ion-avatar img {
+page-fs4c .grid .row ion-avatar img, page-fs4g .grid .row ion-avatar img, page-fs4fo .grid .row ion-avatar img {
   border-radius: 50%;
 }
 
-page-fs4c .grid .row .label-ios, page-fs4g .grid .row .label-ios {
+page-fs4c .grid .row .label-ios, page-fs4g .grid .row .label-ios, page-fs4fo .grid .row .label-ios {
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-page-fs4c .grid .row .label-ios span, page-fs4g .grid .row .label-ios span {
+page-fs4c .grid .row .label-ios span, page-fs4g .grid .row .label-ios span, page-fs4fo .grid .row .label-ios span {
   font-weight: 100;
   margin-right: 30px;
   float: right;
 }
 
-page-fs4c ion-header ion-toolbar .toolbar-background, page-fs4c .toolbar-background-md, page-fs4c .toolbar-background-ios, page-fs4g ion-header ion-toolbar .toolbar-background, page-fs4g .toolbar-background-md, page-fs4g .toolbar-background-ios {
+page-fs4c ion-header ion-toolbar .toolbar-background, page-fs4c .toolbar-background-md, page-fs4c .toolbar-background-ios, page-fs4g ion-header ion-toolbar .toolbar-background, page-fs4g .toolbar-background-md, page-fs4g .toolbar-background-ios, page-fs4fo ion-header ion-toolbar .toolbar-background, page-fs4fo .toolbar-background-md, page-fs4fo .toolbar-background-ios {
   background-color: black;
 }
 
-page-fs4c ion-header, page-fs4g ion-header {
+page-fs4c ion-header, page-fs4g ion-header, page-fs4fo ion-header {
   padding: 4px 20px;
 }
 
-page-fs4c .img-header-left, page-fs4g .img-header-left {
+page-fs4c .img-header-left, page-fs4g .img-header-left, page-fs4fo .img-header-left {
   width: 4vmin;
   height: 4vmin;
 }
 
-page-fs4c .toolbar-title, page-fs4g .toolbar-title {
+page-fs4c .toolbar-title, page-fs4g .toolbar-title, page-fs4fo .toolbar-title {
   color: white;
   letter-spacing: 0.5vmin;
   font-size: 1.5rem;
 }
 
-page-fs4c .button-header-right, page-fs4g .button-header-right {
+page-fs4c .button-header-right, page-fs4g .button-header-right, page-fs4fo .button-header-right {
   font-size: 1.5rem;
   color: #da4739;
 }
 
-page-fs4c ion-input, page-fs4g ion-input {
+page-fs4c ion-input, page-fs4g ion-input, page-fs4fo ion-input {
   font-size: 1.5rem;
   color: white;
 }
 
-page-fs4c ion-content.content, page-fs4g ion-content.content {
+page-fs4c ion-content.content, page-fs4g ion-content.content, page-fs4fo ion-content.content {
   background-color: black;
   color: white;
 }
 
-page-fs4c .scroll-content, page-fs4g .scroll-content {
+page-fs4c .scroll-content, page-fs4g .scroll-content, page-fs4fo .scroll-content {
   overflow-x: unset;
   overflow-y: auto;
 }
 
-page-fs4c .selected, page-fs4g .selected {
+page-fs4c .selected, page-fs4g .selected, page-fs4fo .selected {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -33024,7 +34306,7 @@ page-fs4c .selected, page-fs4g .selected {
   margin-bottom: 5px;
 }
 
-page-fs4c .selected .chip-ios, page-fs4g .selected .chip-ios {
+page-fs4c .selected .chip-ios, page-fs4g .selected .chip-ios, page-fs4fo .selected .chip-ios {
   border-radius: 16px;
   font-size: 12px;
   color: #ffffff;
@@ -33034,19 +34316,19 @@ page-fs4c .selected .chip-ios, page-fs4g .selected .chip-ios {
   background-color: transparent;
 }
 
-page-fs4c .selected .chip-ios ion-avatar, page-fs4g .selected .chip-ios ion-avatar {
+page-fs4c .selected .chip-ios ion-avatar, page-fs4g .selected .chip-ios ion-avatar, page-fs4fo .selected .chip-ios ion-avatar {
   border-radius: 50%;
   width: 32px;
   height: 32px;
   margin: 0 auto;
 }
 
-page-fs4c .selected .chip-ios ion-label, page-fs4g .selected .chip-ios ion-label {
+page-fs4c .selected .chip-ios ion-label, page-fs4g .selected .chip-ios ion-label, page-fs4fo .selected .chip-ios ion-label {
   margin: 0 auto;
   text-align: center;
 }
 
-page-fs4c .selected .chip-ios ion-icon, page-fs4g .selected .chip-ios ion-icon {
+page-fs4c .selected .chip-ios ion-icon, page-fs4g .selected .chip-ios ion-icon, page-fs4fo .selected .chip-ios ion-icon {
   background: transparent;
   text-align: center;
   border-radius: 50%;
@@ -33375,6 +34657,121 @@ page-hl .item-inner {
 
 page-hl .popStyle {
   width: 400px;
+}
+
+page-jh ion-header ion-toolbar .toolbar-background, page-jh .toolbar-background-md, page-jh .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-jh ion-header {
+  padding: 4px 20px;
+}
+
+page-jh ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-jh .img-header-left, page-jh .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-jh .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-jh .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-jh ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-jh ion-item.item-ios {
+  background-color: #3c4d55;
+  color: #fff;
+  border: 0px;
+}
+
+page-jh ion-item.item-ios .item-inner {
+  border: 0px;
+}
+
+page-jh .list-ios .item-block .item-inner {
+  border: 0px;
+}
+
+page-jh .item-ios.item-block .item-inner {
+  border: 0px;
+}
+
+page-jh .list-ios > .item-block:first-child, page-jh .list-ios > .item-wrapper:first-child .item-block {
+  border: 0px;
+}
+
+page-jh .list-ios > .item-block:last-child, page-jh .list-ios > .item-wrapper:last-child .item-block {
+  border: 0px;
+}
+
+page-jh .item-radio-checked.item-ios ion-label {
+  color: #fff;
+}
+
+page-jh .item-radio.item-ios ion-label {
+  font-size: 1.4rem;
+}
+
+page-jh i.color-dot {
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+
+page-jh .radio-ios .radio-checked .radio-inner {
+  border-color: #fff;
+}
+
+page-jh .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-jh .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-jh .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-jh .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-jh .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-jh .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-jh .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-jh .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
 }
 
 page-log {
@@ -34679,6 +36076,29 @@ page-ss ion-content.content {
   color: #fff;
 }
 
+page-ss ion-content.content button.plan-list-item ion-note.inline-icons {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-ss ion-content.content button.plan-list-item ion-note.inline-icons ion-icon {
+  margin-right: 8px;
+}
+
+page-ss ion-content.content button.plan-list-item ion-note.inline-icons ion-icon:last-child {
+  margin-right: 0;
+}
+
+page-ss ion-content.content button.plan-list-item ion-note.inline-icons img {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 8px;
+}
+
 page-ss ion-content .plan-list-item {
   background-color: black;
   color: #fff;
@@ -35246,4 +36666,278 @@ page-tdl .agenda-none {
   letter-spacing: 1px;
   width: 40px;
   line-height: 20px;
+}
+
+page-tdm ion-content.content, page-tdme ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-tdm button.text-btn, page-tdme button.text-btn {
+  color: #fff;
+}
+
+page-tdm ion-scroll, page-tdme ion-scroll {
+  width: 100%;
+  height: calc(100vmin * (180 / 1242) + 32px);
+}
+
+page-tdm ion-scroll .scroll-content, page-tdme ion-scroll .scroll-content {
+  padding: 0;
+}
+
+page-tdm ion-scroll .svg-scroller, page-tdme ion-scroll .svg-scroller {
+  margin-left: -16px;
+}
+
+page-tdm scroll-select.image-scroll-select .scroll-box, page-tdme scroll-select.image-scroll-select .scroll-box {
+  height: 40vmin;
+}
+
+page-tdm scroll-select.image-scroll-select .scroll-box-zoom-wrapper, page-tdme scroll-select.image-scroll-select .scroll-box-zoom-wrapper {
+  margin: 0 -43.5px;
+}
+
+page-tdm scroll-select.image-scroll-select .image-option, page-tdme scroll-select.image-scroll-select .image-option {
+  width: 40vmin;
+  height: 40vmin;
+}
+
+page-tdm button small, page-tdme button small {
+  padding-left: 4px;
+}
+
+page-tdm p.x-small, page-tdme p.x-small {
+  font-size: 3vmin;
+}
+
+page-tdm p.x-title, page-tdme p.x-title {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+page-tdm .full-width, page-tdme .full-width {
+  margin-left: -21px;
+  margin-right: -21px;
+  overflow: hidden;
+}
+
+page-tdm #timerange-picker, page-tdme #timerange-picker {
+  width: 600vmin;
+  height: calc(100vmin * (180 / 1242));
+}
+
+page-tdm .w80, page-tdme .w80 {
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+}
+
+page-tdm .mb-none, page-tdme .mb-none {
+  margin-bottom: 0px;
+}
+
+page-tdm .mt-seven, page-tdme .mt-seven {
+  margin-top: 14vmax;
+}
+
+page-tdm .mt-none, page-tdme .mt-none {
+  margin-top: 0px;
+}
+
+page-tdm .mb-none, page-tdme .mb-none {
+  margin-bottom: 0px;
+}
+
+page-tdm i.color-dot, page-tdme i.color-dot {
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+page-tdm p.memo, page-tdme p.memo {
+  white-space: pre-line;
+  text-align: center;
+}
+
+page-tdm .row-center, page-tdme .row-center {
+  margin: auto;
+}
+
+page-tdm ion-header ion-toolbar .toolbar-background, page-tdm .toolbar-background-md, page-tdm .toolbar-background-ios, page-tdme ion-header ion-toolbar .toolbar-background, page-tdme .toolbar-background-md, page-tdme .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-tdm ion-header, page-tdme ion-header {
+  padding: 4px 20px;
+}
+
+page-tdm ion-header ion-title, page-tdme ion-header ion-title {
+  line-height: 1.5rem;
+  white-space: normal;
+  word-break: break-all;
+  overflow: auto;
+}
+
+page-tdm .img-header-left, page-tdm .img-header-right, page-tdme .img-header-left, page-tdme .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-tdm .toolbar-title, page-tdme .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-tdm .button-header-right, page-tdme .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-tdm baidu-map, page-tdme baidu-map {
+  margin-top: 1.6rem;
+  display: block;
+  width: 33vmin;
+  height: 33vmin;
+  border-radius: 50%;
+}
+
+page-tdm baidu-map div.baidu-map-instance, page-tdme baidu-map div.baidu-map-instance {
+  border-radius: 50%;
+}
+
+page-tdm div.avatars, page-tdme div.avatars {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-tdm div.avatars > div, page-tdme div.avatars > div {
+  display: inline-grid;
+  justify-items: center;
+  max-width: 4.8rem;
+  font-size: 1.4rem;
+  margin: 0.5rem 0.3rem;
+}
+
+page-tdm div.avatars ion-avatar, page-tdme div.avatars ion-avatar {
+  height: 2.4rem;
+  width: 2.4rem;
+  min-height: 2.4rem;
+  min-width: 2.4rem;
+  margin-right: 4px;
+}
+
+page-tdm div.avatars ion-avatar img, page-tdme div.avatars ion-avatar img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+page-tdm .footer-ios .toolbar-background-ios, page-tdme .footer-ios .toolbar-background-ios {
+  background-color: #2b3340;
+  border-style: none;
+}
+
+page-tdm .footer-ios .button-full-ios, page-tdme .footer-ios .button-full-ios {
+  background-color: #2b3340;
+}
+
+page-tdm .footer-ios button[block], page-tdme .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-tdm .footer-ios .bar-button-ios, page-tdme .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-tdm .footer-ios .toolbar-content-ios, page-tdme .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-tdm .footer-ios ion-buttons[padding-left], page-tdme .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-tdm .footer-ios ion-buttons[padding-right], page-tdme .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-tdm .footer-ios [icon-only] ion-icon, page-tdme .footer-ios [icon-only] ion-icon {
+  background-color: #2b3340;
+  color: white;
+}
+
+page-tdm speech-bubble .outground, page-tdme speech-bubble .outground {
+  background-color: #2b3340;
+}
+
+page-tx ion-header ion-toolbar .toolbar-background, page-tx .toolbar-background-md, page-tx .toolbar-background-ios {
+  background-color: #3c4d55;
+}
+
+page-tx ion-header {
+  padding: 4px 20px;
+}
+
+page-tx ion-header ion-title {
+  line-height: 1.5rem;
+}
+
+page-tx .img-header-left, page-tx .img-header-right {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+page-tx .toolbar-title {
+  color: white;
+  letter-spacing: 0.5vmin;
+  font-size: 1.5rem;
+}
+
+page-tx .button-header-right {
+  font-size: 1.5rem;
+  color: #da4739;
+}
+
+page-tx ion-content.content {
+  color: #fff;
+  background-color: #3c4d55;
+}
+
+page-tx .footer-ios .toolbar-background-ios {
+  background-color: #394a51;
+  border-style: none;
+}
+
+page-tx .footer-ios .button-full-ios {
+  background-color: #394a51;
+}
+
+page-tx .footer-ios button[block] {
+  width: 30vmin;
+}
+
+page-tx .footer-ios .bar-button-ios {
+  color: #da4739;
+  font-size: 15px;
+}
+
+page-tx .footer-ios .toolbar-content-ios {
+  text-align: center;
+}
+
+page-tx .footer-ios ion-buttons[padding-left] {
+  padding-left: 50px;
+}
+
+page-tx .footer-ios ion-buttons[padding-right] {
+  padding-right: 50px;
+}
+
+page-tx .footer-ios [icon-only] ion-icon {
+  background-color: #394a51;
+  color: white;
 }

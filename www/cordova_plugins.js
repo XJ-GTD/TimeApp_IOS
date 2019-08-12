@@ -9,6 +9,38 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-clipboard.Clipboard",
+    "file": "plugins/cordova-clipboard/www/clipboard.js",
+    "pluginId": "cordova-clipboard",
+    "clobbers": [
+      "cordova.plugins.clipboard"
+    ]
+  },
+  {
+    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduSpeech",
+    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduSpeech.js",
+    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
+    "clobbers": [
+      "cordova.plugins.XjBaiduSpeech"
+    ]
+  },
+  {
+    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduTts",
+    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduTts.js",
+    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
+    "clobbers": [
+      "cordova.plugins.XjBaiduTts"
+    ]
+  },
+  {
+    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduWakeUp",
+    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduWakeUp.js",
+    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
+    "clobbers": [
+      "cordova.plugins.XjBaiduWakeUp"
+    ]
+  },
+  {
     "id": "cordova-plugin-file.DirectoryEntry",
     "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
     "pluginId": "cordova-plugin-file",
@@ -182,18 +214,23 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-plugin-advanced-http.lodash",
-    "file": "plugins/cordova-plugin-advanced-http/www/lodash.js",
+    "id": "cordova-plugin-advanced-http.cookie-handler",
+    "file": "plugins/cordova-plugin-advanced-http/www/cookie-handler.js",
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
-    "id": "cordova-plugin-advanced-http.tough-cookie",
-    "file": "plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js",
+    "id": "cordova-plugin-advanced-http.global-configs",
+    "file": "plugins/cordova-plugin-advanced-http/www/global-configs.js",
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
-    "id": "cordova-plugin-advanced-http.messages",
-    "file": "plugins/cordova-plugin-advanced-http/www/messages.js",
+    "id": "cordova-plugin-advanced-http.helpers",
+    "file": "plugins/cordova-plugin-advanced-http/www/helpers.js",
+    "pluginId": "cordova-plugin-advanced-http"
+  },
+  {
+    "id": "cordova-plugin-advanced-http.js-util",
+    "file": "plugins/cordova-plugin-advanced-http/www/js-util.js",
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
@@ -202,13 +239,28 @@ module.exports = [
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
-    "id": "cordova-plugin-advanced-http.cookie-handler",
-    "file": "plugins/cordova-plugin-advanced-http/www/cookie-handler.js",
+    "id": "cordova-plugin-advanced-http.lodash",
+    "file": "plugins/cordova-plugin-advanced-http/www/lodash.js",
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
-    "id": "cordova-plugin-advanced-http.helpers",
-    "file": "plugins/cordova-plugin-advanced-http/www/helpers.js",
+    "id": "cordova-plugin-advanced-http.messages",
+    "file": "plugins/cordova-plugin-advanced-http/www/messages.js",
+    "pluginId": "cordova-plugin-advanced-http"
+  },
+  {
+    "id": "cordova-plugin-advanced-http.public-interface",
+    "file": "plugins/cordova-plugin-advanced-http/www/public-interface.js",
+    "pluginId": "cordova-plugin-advanced-http"
+  },
+  {
+    "id": "cordova-plugin-advanced-http.tough-cookie",
+    "file": "plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js",
+    "pluginId": "cordova-plugin-advanced-http"
+  },
+  {
+    "id": "cordova-plugin-advanced-http.url-util",
+    "file": "plugins/cordova-plugin-advanced-http/www/url-util.js",
     "pluginId": "cordova-plugin-advanced-http"
   },
   {
@@ -370,6 +422,47 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-geolocation.Coordinates",
+    "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "Coordinates"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.PositionError",
+    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "PositionError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.Position",
+    "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "Position"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.geolocation",
+    "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "navigator.geolocation"
+    ]
+  },
+  {
+    "id": "cordova-plugin-inappbrowser.inappbrowser",
+    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+    "pluginId": "cordova-plugin-inappbrowser",
+    "clobbers": [
+      "cordova.InAppBrowser.open",
+      "window.open"
+    ]
+  },
+  {
     "id": "cordova-plugin-ionic-webview.IonicWebView",
     "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
     "pluginId": "cordova-plugin-ionic-webview",
@@ -412,6 +505,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-mipush.MiPush",
+    "file": "plugins/cordova-plugin-mipush/www/MiPush.js",
+    "pluginId": "cordova-plugin-mipush",
+    "clobbers": [
+      "MiPush"
+    ]
+  },
+  {
     "id": "cordova-plugin-nativeaudio.nativeaudio",
     "file": "plugins/cordova-plugin-nativeaudio/www/nativeaudio.js",
     "pluginId": "cordova-plugin-nativeaudio",
@@ -434,6 +535,14 @@ module.exports = [
     "pluginId": "cordova-plugin-network-information",
     "clobbers": [
       "Connection"
+    ]
+  },
+  {
+    "id": "cordova-plugin-rabbitmq.RabbitMQPlugin",
+    "file": "plugins/cordova-plugin-rabbitmq/www/RabbitMQPlugin.js",
+    "pluginId": "cordova-plugin-rabbitmq",
+    "clobbers": [
+      "cordova.plugins.RabbitMQPlugin"
     ]
   },
   {
@@ -486,51 +595,19 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "uk.co.workingedge.cordova.plugin.sqliteporter.sqlitePorter",
-    "file": "plugins/uk.co.workingedge.cordova.plugin.sqliteporter/www/sqlitePorter.js",
-    "pluginId": "uk.co.workingedge.cordova.plugin.sqliteporter",
-    "clobbers": [
-      "cordova.plugins.sqlitePorter"
-    ]
-  },
-  {
-    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduSpeech",
-    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduSpeech.js",
-    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
-    "clobbers": [
-      "cordova.plugins.XjBaiduSpeech"
-    ]
-  },
-  {
-    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduTts",
-    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduTts.js",
-    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
-    "clobbers": [
-      "cordova.plugins.XjBaiduTts"
-    ]
-  },
-  {
-    "id": "cordova-plugin-BaiduSpeechAndTTS.XjBaiduWakeUp",
-    "file": "plugins/cordova-plugin-BaiduSpeechAndTTS/www/xjBaiduWakeUp.js",
-    "pluginId": "cordova-plugin-BaiduSpeechAndTTS",
-    "clobbers": [
-      "cordova.plugins.XjBaiduWakeUp"
-    ]
-  },
-  {
-    "id": "cordova-clipboard.Clipboard",
-    "file": "plugins/cordova-clipboard/www/clipboard.js",
-    "pluginId": "cordova-clipboard",
-    "clobbers": [
-      "cordova.plugins.clipboard"
-    ]
-  },
-  {
     "id": "jpush-phonegap-plugin.JPushPlugin",
     "file": "plugins/jpush-phonegap-plugin/www/JPushPlugin.js",
     "pluginId": "jpush-phonegap-plugin",
     "clobbers": [
       "JPush"
+    ]
+  },
+  {
+    "id": "uk.co.workingedge.cordova.plugin.sqliteporter.sqlitePorter",
+    "file": "plugins/uk.co.workingedge.cordova.plugin.sqliteporter/www/sqlitePorter.js",
+    "pluginId": "uk.co.workingedge.cordova.plugin.sqliteporter",
+    "clobbers": [
+      "cordova.plugins.sqlitePorter"
     ]
   }
 ];
@@ -538,31 +615,35 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "com.telerik.plugins.nativepagetransitions": "0.6.5",
-  "cordova-plugin-file": "6.0.1",
-  "cordova-plugin-advanced-http": "2.0.2",
+  "cordova-clipboard": "1.2.1",
+  "cordova-plugin-BaiduSpeechAndTTS": "1.0.0",
+  "cordova-plugin-file": "6.0.2",
+  "cordova-plugin-advanced-http": "2.0.11",
   "cordova-plugin-android-permissions": "1.0.0",
-  "cordova-plugin-device": "2.0.2",
+  "cordova-plugin-device": "2.0.3",
   "cordova-plugin-background-mode": "0.7.2",
   "cordova-plugin-badge": "0.8.8",
-  "cordova-plugin-calendar": "5.1.3",
+  "cordova-plugin-calendar": "5.1.4",
   "cordova-plugin-contacts": "3.0.1",
   "cordova-plugin-file-transfer": "1.7.1",
-  "cordova-plugin-ionic-webview": "2.3.1",
+  "cordova-plugin-geolocation": "4.0.2",
+  "cordova-plugin-inappbrowser": "3.0.0",
+  "cordova-plugin-ionic-webview": "2.3.3",
+  "cordova-plugin-jcore": "1.3.0",
   "cordova-plugin-local-notification": "0.9.0-beta.2",
+  "cordova-plugin-mipush": "2.0.0",
   "cordova-plugin-nativeaudio": "3.0.9",
   "cordova-plugin-network-information": "2.0.1",
+  "cordova-plugin-rabbitmq": "0.0.1",
   "cordova-plugin-screen-orientation": "3.0.1",
-  "cordova-plugin-splashscreen": "5.0.2",
-  "cordova-plugin-statusbar": "2.4.2",
-  "cordova-plugin-vibration": "3.1.0",
-  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-splashscreen": "5.0.3",
+  "cordova-plugin-statusbar": "2.4.3",
+  "cordova-plugin-vibration": "3.1.1",
+  "cordova-plugin-whitelist": "1.3.4",
   "cordova-sqlite-storage": "2.6.0",
   "ionic-plugin-keyboard": "2.2.1",
-  "uk.co.workingedge.cordova.plugin.sqliteporter": "1.1.0",
-  "cordova-plugin-BaiduSpeechAndTTS": "1.0.0",
-  "cordova-clipboard": "1.2.1",
-  "cordova-plugin-jcore": "1.2.8",
-  "jpush-phonegap-plugin": "3.6.4"
+  "jpush-phonegap-plugin": "3.6.4",
+  "uk.co.workingedge.cordova.plugin.sqliteporter": "1.1.0"
 };
 // BOTTOM OF METADATA
 });

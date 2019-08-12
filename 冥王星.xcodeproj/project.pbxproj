@@ -34,7 +34,6 @@
 		3539A527D794444D8D974BE4 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0687C755B48C0AAEC9E25 /* GCDWebServerRequest.m */; };
 		359B7732AB4A4812ABE6D39E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE21DB916A943AF9C8159E6 /* AFHTTPSessionManager.m */; };
 		381492507C4848838FFF9581 /* TextResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2401C5EA9D2840B993CF417C /* TextResponseSerializer.m */; };
-		3B3E91166A624527A6E94053 /* libBaiduTTSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC8CA3CB97D4D60BFF19023 /* libBaiduTTSSDK.a */; };
 		4231DC0364B1474BB486CB0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F1A62623FB413E8DB8844F /* AudioToolbox.framework */; };
 		45AF5CB306DE4B929BCE894E /* XjBaiduTts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8B1AE84C04E72BA2BE1E3 /* XjBaiduTts.m */; };
 		5242AB9DA874413992F71086 /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C06A53F3B84983ABDB8F47 /* APPBadge.m */; };
@@ -64,6 +63,15 @@
 		5869C2322296BB79004C2B94 /* Chinese_Speech_Female.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5869C21C2296BB79004C2B94 /* Chinese_Speech_Female.dat */; };
 		5869C2332296BB79004C2B94 /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5869C21D2296BB79004C2B94 /* bds_easr_dnn_wakeup_model.dat */; };
 		5869C2342296BB79004C2B94 /* tmp_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5869C21E2296BB79004C2B94 /* tmp_license.dat */; };
+		5891AD152301540300A65C5F /* RabbitMQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD0B2301540100A65C5F /* RabbitMQPlugin.m */; };
+		5891AD172301540300A65C5F /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD0F2301540200A65C5F /* CDVLocation.m */; };
+		5891AD182301540300A65C5F /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD112301540200A65C5F /* CDVInAppBrowser.m */; };
+		5891AD4323016EBB00A65C5F /* framework in Resources */ = {isa = PBXBuildFile; fileRef = 5891AD4223016EBA00A65C5F /* framework */; };
+		5891AD4523016F5200A65C5F /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; };
+		5891AD4623016F5D00A65C5F /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; };
+		5891AD4723016F5D00A65C5F /* RMQClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5891AD4C2301722600A65C5F /* libBaiduTTSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD492301722600A65C5F /* libBaiduTTSSDK.a */; };
+		5891AD4E2301722600A65C5F /* libBaiduASRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */; };
 		589D389DCE824782B39B283F /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A12EC367D1A4A96B701F305 /* CDVDevice.m */; };
 		58DA4BC22293F624003D4680 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		5B7CD068283D450BB2D55E0E /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE603E3E31C4D9FAF5DB1E4 /* CDVReachability.m */; };
@@ -72,7 +80,6 @@
 		6442EB93785F4794BAD78A6F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0137464191EC4A6BBFD7AB32 /* AFNetworkReachabilityManager.m */; };
 		64BF57F1C67C4464B1B05327 /* JPushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEBFC630A544819C719B49 /* JPushPlugin.m */; };
 		66400EB14032480F8D856633 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 331978AF82814FA8AFABC9DE /* GCDWebServerURLEncodedFormRequest.m */; };
-		667314DAA99845BEB4669EB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EDBA2095F4FFBBFFBBD60 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		687644FBDBC4451BB2ED08CF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67D637667AB421593F29488 /* EventKitUI.framework */; };
 		698CD33FA0BB42E7B46AD5BA /* jcore-ios-1.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E24AB35B1AF145BD840B0457 /* jcore-ios-1.2.6.a */; };
 		6C43D497EF2E40A2BB62A8B7 /* CDVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E93B38F288C4BC39E24F0F7 /* CDVOrientation.m */; };
@@ -121,7 +128,6 @@
 		EE16769C113A4240A4FFF9E5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF276EE61345B5ACBF1119 /* AFSecurityPolicy.m */; };
 		EFF43F4238424D56BC15474C /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D50C298ED745D6B296DA34 /* CDVSplashScreen.m */; };
 		F13579B7E6AA43DFA1F3D0BC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8545A249194AA089DEC02C /* libz.tbd */; };
-		F42097EBF0494D26A53ADE63 /* libBaiduASRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD95C7A9EB8240E7B466DC33 /* libBaiduASRSDK.a */; };
 		F4926A1962044F0099581427 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3D89E30EB4719ACF16FFF /* UNUserNotificationCenter+APPLocalNotification.m */; };
 		F607D65A3B8D4945AF1694F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050B1AA9D62E49E78525EA6B /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F66480A4EF02412AA39A321C /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2870FA94A84A598161EEA8 /* AppDelegate+JPush.m */; };
@@ -154,6 +160,20 @@
 			remoteInfo = Cordova;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5891AD3B2301673C00A65C5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5891AD4723016F5D00A65C5F /* RMQClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0096FFFBE6A443D9B7E8D8B5 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
@@ -194,7 +214,6 @@
 		2CC8B1AE84C04E72BA2BE1E3 /* XjBaiduTts.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = XjBaiduTts.m; path = "cordova-plugin-BaiduSpeechAndTTS/XjBaiduTts.m"; sourceTree = "<group>"; };
 		2DF80FE8B237495D86BFCD9F /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
 		2E90B9C7BECC49E1BD99F9C0 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BDSSpeechSynthesizerErrors.h; path = "cordova-plugin-BaiduSpeechAndTTS/BDSSpeechSynthesizerErrors.h"; sourceTree = "<group>"; };
-		2EC8CA3CB97D4D60BFF19023 /* libBaiduTTSSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libBaiduTTSSDK.a; path = "冥王星/Plugins/cordova-plugin-BaiduSpeechAndTTS/libBaiduTTSSDK.a"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -257,6 +276,17 @@
 		5869C21C2296BB79004C2B94 /* Chinese_Speech_Female.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Speech_Female.dat; sourceTree = "<group>"; };
 		5869C21D2296BB79004C2B94 /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
 		5869C21E2296BB79004C2B94 /* tmp_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tmp_license.dat; sourceTree = "<group>"; };
+		5891AD092301540100A65C5F /* RabbitMQPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RabbitMQPlugin.h; path = "cordova-plugin-rabbitmq/RabbitMQPlugin.h"; sourceTree = "<group>"; };
+		5891AD0B2301540100A65C5F /* RabbitMQPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RabbitMQPlugin.m; path = "cordova-plugin-rabbitmq/RabbitMQPlugin.m"; sourceTree = "<group>"; };
+		5891AD0C2301540200A65C5F /* CDVInAppBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
+		5891AD0F2301540200A65C5F /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		5891AD112301540200A65C5F /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
+		5891AD132301540300A65C5F /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+		5891AD4223016EBA00A65C5F /* framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = framework; path = "冥王星/Plugins/framework"; sourceTree = "<group>"; };
+		5891AD4423016F5200A65C5F /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = "冥王星/Plugins/framework/RMQClient.framework"; sourceTree = "<group>"; };
+		5891AD492301722600A65C5F /* libBaiduTTSSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBaiduTTSSDK.a; path = "冥王星/Plugins/framework/libBaiduTTSSDK.a"; sourceTree = "<group>"; };
+		5891AD4A2301722600A65C5F /* libMiPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMiPushSDK.a; path = "冥王星/Plugins/framework/libMiPushSDK.a"; sourceTree = "<group>"; };
+		5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBaiduASRSDK.a; path = "冥王星/Plugins/framework/libBaiduASRSDK.a"; sourceTree = "<group>"; };
 		5BB5CEEC9310404C8A7CFFFA /* sqlite3.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "cordova-sqlite-storage/sqlite3.h"; sourceTree = "<group>"; };
 		5C8D107486EC47B2ABEB0D41 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BDSSpeechSynthesizerDelegate.h; path = "cordova-plugin-BaiduSpeechAndTTS/BDSSpeechSynthesizerDelegate.h"; sourceTree = "<group>"; };
 		6010170A6E30465C88F4FBD6 /* CDVOrientation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVOrientation.h; path = "cordova-plugin-screen-orientation/CDVOrientation.h"; sourceTree = "<group>"; };
@@ -370,7 +400,6 @@
 		FB23A4EA6F08440B9A55D301 /* CDVConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
 		FB6817CC5A4545FBB5424EFF /* BDSSynthesizerStatusNotifications.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BDSSynthesizerStatusNotifications.h; path = "cordova-plugin-BaiduSpeechAndTTS/BDSSynthesizerStatusNotifications.h"; sourceTree = "<group>"; };
 		FBE603E3E31C4D9FAF5DB1E4 /* CDVReachability.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "cordova-plugin-network-information/CDVReachability.m"; sourceTree = "<group>"; };
-		FD95C7A9EB8240E7B466DC33 /* libBaiduASRSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libBaiduASRSDK.a; path = "冥王星/Plugins/cordova-plugin-BaiduSpeechAndTTS/libBaiduASRSDK.a"; sourceTree = "<group>"; };
 		FEDF276EE61345B5ACBF1119 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = "cordova-plugin-advanced-http/AFSecurityPolicy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -379,12 +408,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5891AD4C2301722600A65C5F /* libBaiduTTSSDK.a in Frameworks */,
+				5891AD4E2301722600A65C5F /* libBaiduASRSDK.a in Frameworks */,
+				5891AD4523016F5200A65C5F /* RMQClient.framework in Frameworks */,
 				582AF346224E2C3B00D90D23 /* libiconv.2.4.0.tbd in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				F607D65A3B8D4945AF1694F9 /* AVFoundation.framework in Frameworks */,
 				5825A9E62C4145BB811DA1A4 /* CoreLocation.framework in Frameworks */,
 				260E247944704B2DB88F7AF8 /* CoreTelephony.framework in Frameworks */,
-				667314DAA99845BEB4669EB9 /* SystemConfiguration.framework in Frameworks */,
 				8087A0FC18D44F619CD5DB90 /* Security.framework in Frameworks */,
 				284DFE977BD54116A2E50924 /* EventKit.framework in Frameworks */,
 				687644FBDBC4451BB2ED08CF /* EventKitUI.framework in Frameworks */,
@@ -395,8 +426,6 @@
 				EC987DF35BC9439799B8D1AB /* UserNotifications.framework in Frameworks */,
 				EBE621A05A614A8AAD2679DB /* Foundation.framework in Frameworks */,
 				4231DC0364B1474BB486CB0A /* AudioToolbox.framework in Frameworks */,
-				3B3E91166A624527A6E94053 /* libBaiduTTSSDK.a in Frameworks */,
-				F42097EBF0494D26A53ADE63 /* libBaiduASRSDK.a in Frameworks */,
 				11EC602D6F4C4075B67C0E3B /* libc++.tbd in Frameworks */,
 				0545B5F3569543809D2B7D2F /* libz.1.2.5.tbd in Frameworks */,
 				01C6088F5ED64F1A8A3D5CDC /* libiconv.2.4.0.tdb in Frameworks */,
@@ -407,6 +436,7 @@
 				CED775E1CA484562AEBB3ED2 /* CoreFoundation.framework in Frameworks */,
 				E6CCA7396A574B4A91E9AADE /* UIKit.framework in Frameworks */,
 				92AB5CD615BC400BAB0BF23B /* AdSupport.framework in Frameworks */,
+				5891AD4623016F5D00A65C5F /* RMQClient.framework in Frameworks */,
 				73E46D726AF24CEC98609DEE /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +468,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5891AD4223016EBA00A65C5F /* framework */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -478,6 +509,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */,
+				5891AD492301722600A65C5F /* libBaiduTTSSDK.a */,
+				5891AD4A2301722600A65C5F /* libMiPushSDK.a */,
+				5891AD4423016F5200A65C5F /* RMQClient.framework */,
 				582AF345224E2C3B00D90D23 /* libiconv.2.4.0.tbd */,
 				050B1AA9D62E49E78525EA6B /* AVFoundation.framework */,
 				7070B44889AC459CB36D3161 /* CoreLocation.framework */,
@@ -493,8 +528,6 @@
 				81AE75B6B6A54FD090C2F553 /* UserNotifications.framework */,
 				07D587F8E3054A479C45406C /* Foundation.framework */,
 				F6F1A62623FB413E8DB8844F /* AudioToolbox.framework */,
-				2EC8CA3CB97D4D60BFF19023 /* libBaiduTTSSDK.a */,
-				FD95C7A9EB8240E7B466DC33 /* libBaiduASRSDK.a */,
 				C632D1878E8E40FD91F72366 /* libc++.tbd */,
 				DAEDEE8CB60E44419EB5E5AA /* libz.1.2.5.tbd */,
 				F57FD9C7B08A413FBAFFAA00 /* libiconv.2.4.0.tdb */,
@@ -532,6 +565,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				5891AD0C2301540200A65C5F /* CDVInAppBrowser.h */,
+				5891AD112301540200A65C5F /* CDVInAppBrowser.m */,
+				5891AD132301540300A65C5F /* CDVLocation.h */,
+				5891AD0F2301540200A65C5F /* CDVLocation.m */,
+				5891AD092301540100A65C5F /* RabbitMQPlugin.h */,
+				5891AD0B2301540100A65C5F /* RabbitMQPlugin.m */,
 				8A4CCD83358D4B7C89725D66 /* NativePageTransitions.m */,
 				774097DF6ECB449B96449C83 /* AppDelegate+nativepagetransitions.m */,
 				DEE4A464CEB3406BABF5BCA7 /* NativePageTransitions.h */,
@@ -733,6 +772,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				5891AD3B2301673C00A65C5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -831,6 +871,7 @@
 				5869C22E2296BB79004C2B94 /* Chinese_And_English_Speech_Female.dat in Resources */,
 				5869C2272296BB79004C2B94 /* Chinese_And_English_Speech_Male.dat in Resources */,
 				5869C22B2296BB79004C2B94 /* English_Speech_Male.dat in Resources */,
+				5891AD4323016EBB00A65C5F /* framework in Resources */,
 				5869C2252296BB79004C2B94 /* Chinese_And_English_Speech_Male-yyjw.dat in Resources */,
 				5869C2212296BB79004C2B94 /* Chinese_And_English_Speech_DYY.dat in Resources */,
 				FBF4996E53AF4E7893E448F7 /* JPushConfig.plist in Resources */,
@@ -890,6 +931,7 @@
 				0C6475DEE47C440991A675BB /* CDVFileTransfer.m in Sources */,
 				A5D6BBE3C8B3494C979D9580 /* CDVWKWebViewEngine.m in Sources */,
 				B855AA2470B5436E831CC438 /* CDVWKWebViewUIDelegate.m in Sources */,
+				5891AD172301540300A65C5F /* CDVLocation.m in Sources */,
 				E3F313AD53B64D9ABEEB7640 /* CDVWKProcessPoolFactory.m in Sources */,
 				1A78627A47B94C7AB16991C9 /* IONAssetHandler.m in Sources */,
 				5DACE83A05C34D16AE02965B /* GCDWebServer.m in Sources */,
@@ -906,6 +948,7 @@
 				0B454CF4A1A041E1AFEBADF3 /* GCDWebServerFileResponse.m in Sources */,
 				CFB87787471E472DB9912430 /* GCDWebServerStreamedResponse.m in Sources */,
 				78DAE0B3603549979DB510C9 /* APPLocalNotification.m in Sources */,
+				5891AD152301540300A65C5F /* RabbitMQPlugin.m in Sources */,
 				A9EE96DBB2D34B1FB116A203 /* APPNotificationContent.m in Sources */,
 				CC1D9D37295241B3859A892D /* APPNotificationOptions.m in Sources */,
 				F4926A1962044F0099581427 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
@@ -919,6 +962,7 @@
 				BE70BC90FB1944CBA6FF3A96 /* CDVViewController+SplashScreen.m in Sources */,
 				2B37B529B1F545218DFBE8FE /* CDVStatusBar.m in Sources */,
 				24CB61AC52054BE292AECCC1 /* CDVVibration.m in Sources */,
+				5891AD182301540300A65C5F /* CDVInAppBrowser.m in Sources */,
 				7C5B2AFBA9804D279365DB5B /* SQLitePlugin.m in Sources */,
 				1A94C453F3224F7294102C8F /* PSPDFThreadSafeMutableDictionary.m in Sources */,
 				B246B5A2FE1C459294FE8427 /* sqlite3.c in Sources */,
@@ -956,6 +1000,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/冥王星/Plugins/framework",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -971,6 +1019,8 @@
 					"\"$(SRCROOT)/冥王星/Plugins/cordova-plugin-BaiduSpeechAndTTS\"",
 					"\"$(SRCROOT)/冥王星/Plugins/cordova-plugin-jcore\"",
 					"\"$(SRCROOT)/冥王星/Plugins/jpush-phonegap-plugin\"",
+					"$(PROJECT_DIR)/冥王星/Plugins/cordova-plugin-mipush",
+					"$(PROJECT_DIR)/冥王星/Plugins/framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sh.com.xj.timeApp;
 				PRODUCT_NAME = "冥王星";
@@ -992,6 +1042,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/冥王星/Plugins/framework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "冥王星/冥王星-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -1005,6 +1059,8 @@
 					"\"$(SRCROOT)/冥王星/Plugins/cordova-plugin-BaiduSpeechAndTTS\"",
 					"\"$(SRCROOT)/冥王星/Plugins/cordova-plugin-jcore\"",
 					"\"$(SRCROOT)/冥王星/Plugins/jpush-phonegap-plugin\"",
+					"$(PROJECT_DIR)/冥王星/Plugins/cordova-plugin-mipush",
+					"$(PROJECT_DIR)/冥王星/Plugins/framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sh.com.xj.timeApp;
 				PRODUCT_NAME = "冥王星";
@@ -1038,8 +1094,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1081,7 +1139,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
