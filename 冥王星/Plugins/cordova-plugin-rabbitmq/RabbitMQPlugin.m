@@ -3,7 +3,7 @@
 #import "RabbitMQPlugin.h"
 #import <RMQClient/RMQClient.h>
 
-@implementation NSDictionary (JPush)
+@implementation NSDictionary (RabbitMQ)
 -(NSString*)toJsonString{
     NSError  *error;
     NSData   *data       = [NSJSONSerialization dataWithJSONObject:self options:0 error:&error];
@@ -100,6 +100,7 @@
     
     //"mwxing.announce";
     
+    
     [ch queueBind:queueName exchange:@"exchange.mwxing.fanout" routingKey:@"mwxing.announce"];
     //[q bind: x routingKey:@"mwxing.announce"];
     
@@ -116,11 +117,16 @@
 
     RMQBasicConsumeOptions option = RMQBasicConsumeNoAck;
     [ch basicConsume: queueName options:option handler:^(RMQMessage *received){
+        
         NSString* body = [[NSString alloc] initWithData:[received body] encoding:NSUTF8StringEncoding];
+                          
+        NSDictionary *finishDic;
+        finishDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                     body, @"body",nil];
         NSLog(@"%@", body);
         
-        [RabbitMQPlugin fireDocumentEvent:@"receivedMessageInAndroidCallback"
-                                 jsString:body];
+        [RabbitMQPlugin fireDocumentEvent:@"receivedMessage"
+                                 jsString:[finishDic toJsonString]];
     }];
 }
 
@@ -129,7 +135,7 @@
         //RabbitMQPlugin.receivedMessageInAndroidCallback
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [SharedRabbitMQPlugin.commandDelegate evalJs:[NSString stringWithFormat:@"cordova.fireDocumentEvent('RabbitMQPlugin.%@',%@)", eventName, jsString]];
+            [SharedRabbitMQPlugin.commandDelegate evalJs:[NSString stringWithFormat:@"cordova.fireDocumentEvent('rabbitmq.%@',%@)", eventName, jsString]];
         });
         return;
     }
