@@ -65,14 +65,12 @@
 		5869C2342296BB79004C2B94 /* tmp_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5869C21E2296BB79004C2B94 /* tmp_license.dat */; };
 		5891AD152301540300A65C5F /* RabbitMQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD0B2301540100A65C5F /* RabbitMQPlugin.m */; };
 		5891AD172301540300A65C5F /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD0F2301540200A65C5F /* CDVLocation.m */; };
-		5891AD182301540300A65C5F /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891AD112301540200A65C5F /* CDVInAppBrowser.m */; };
-		5891AD4323016EBB00A65C5F /* framework in Resources */ = {isa = PBXBuildFile; fileRef = 5891AD4223016EBA00A65C5F /* framework */; };
-		5891AD4523016F5200A65C5F /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; };
-		5891AD4623016F5D00A65C5F /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; };
-		5891AD4723016F5D00A65C5F /* RMQClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4423016F5200A65C5F /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5891AD4C2301722600A65C5F /* libBaiduTTSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD492301722600A65C5F /* libBaiduTTSSDK.a */; };
 		5891AD4E2301722600A65C5F /* libBaiduASRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */; };
 		589D389DCE824782B39B283F /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A12EC367D1A4A96B701F305 /* CDVDevice.m */; };
+		58C3117223506D7A00644CFC /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C3116F23506D7900644CFC /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C3117323506D7A00644CFC /* JKVValue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C3117023506D7A00644CFC /* JKVValue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C3117423506D7A00644CFC /* RMQClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C3117123506D7A00644CFC /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58DA4BC22293F624003D4680 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		5B7CD068283D450BB2D55E0E /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE603E3E31C4D9FAF5DB1E4 /* CDVReachability.m */; };
 		5DACE83A05C34D16AE02965B /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBF7BAF9AE340A9B1F8C339 /* GCDWebServer.m */; };
@@ -168,7 +166,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5891AD4723016F5D00A65C5F /* RMQClient.framework in Embed Frameworks */,
+				58C3117223506D7A00644CFC /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				58C3117323506D7A00644CFC /* JKVValue.framework in Embed Frameworks */,
+				58C3117423506D7A00644CFC /* RMQClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,15 +278,16 @@
 		5869C21E2296BB79004C2B94 /* tmp_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tmp_license.dat; sourceTree = "<group>"; };
 		5891AD092301540100A65C5F /* RabbitMQPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RabbitMQPlugin.h; path = "cordova-plugin-rabbitmq/RabbitMQPlugin.h"; sourceTree = "<group>"; };
 		5891AD0B2301540100A65C5F /* RabbitMQPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RabbitMQPlugin.m; path = "cordova-plugin-rabbitmq/RabbitMQPlugin.m"; sourceTree = "<group>"; };
-		5891AD0C2301540200A65C5F /* CDVInAppBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
 		5891AD0F2301540200A65C5F /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
-		5891AD112301540200A65C5F /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
 		5891AD132301540300A65C5F /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
-		5891AD4223016EBA00A65C5F /* framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = framework; path = "冥王星/Plugins/framework"; sourceTree = "<group>"; };
 		5891AD4423016F5200A65C5F /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = "冥王星/Plugins/framework/RMQClient.framework"; sourceTree = "<group>"; };
 		5891AD492301722600A65C5F /* libBaiduTTSSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBaiduTTSSDK.a; path = "冥王星/Plugins/framework/libBaiduTTSSDK.a"; sourceTree = "<group>"; };
 		5891AD4A2301722600A65C5F /* libMiPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMiPushSDK.a; path = "冥王星/Plugins/framework/libMiPushSDK.a"; sourceTree = "<group>"; };
 		5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBaiduASRSDK.a; path = "冥王星/Plugins/framework/libBaiduASRSDK.a"; sourceTree = "<group>"; };
+		58C3116F23506D7900644CFC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = framework/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		58C3117023506D7A00644CFC /* JKVValue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKVValue.framework; path = framework/JKVValue.framework; sourceTree = "<group>"; };
+		58C3117123506D7A00644CFC /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = framework/RMQClient.framework; sourceTree = "<group>"; };
+		58C3117523506DE600644CFC /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = framework/RMQClient.framework/Headers; sourceTree = "<group>"; };
 		5BB5CEEC9310404C8A7CFFFA /* sqlite3.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "cordova-sqlite-storage/sqlite3.h"; sourceTree = "<group>"; };
 		5C8D107486EC47B2ABEB0D41 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BDSSpeechSynthesizerDelegate.h; path = "cordova-plugin-BaiduSpeechAndTTS/BDSSpeechSynthesizerDelegate.h"; sourceTree = "<group>"; };
 		6010170A6E30465C88F4FBD6 /* CDVOrientation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVOrientation.h; path = "cordova-plugin-screen-orientation/CDVOrientation.h"; sourceTree = "<group>"; };
@@ -410,7 +411,6 @@
 			files = (
 				5891AD4C2301722600A65C5F /* libBaiduTTSSDK.a in Frameworks */,
 				5891AD4E2301722600A65C5F /* libBaiduASRSDK.a in Frameworks */,
-				5891AD4523016F5200A65C5F /* RMQClient.framework in Frameworks */,
 				582AF346224E2C3B00D90D23 /* libiconv.2.4.0.tbd in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				F607D65A3B8D4945AF1694F9 /* AVFoundation.framework in Frameworks */,
@@ -436,7 +436,6 @@
 				CED775E1CA484562AEBB3ED2 /* CoreFoundation.framework in Frameworks */,
 				E6CCA7396A574B4A91E9AADE /* UIKit.framework in Frameworks */,
 				92AB5CD615BC400BAB0BF23B /* AdSupport.framework in Frameworks */,
-				5891AD4623016F5D00A65C5F /* RMQClient.framework in Frameworks */,
 				73E46D726AF24CEC98609DEE /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +467,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5891AD4223016EBA00A65C5F /* framework */,
+				58C3116F23506D7900644CFC /* CocoaAsyncSocket.framework */,
+				58C3117023506D7A00644CFC /* JKVValue.framework */,
+				58C3117123506D7A00644CFC /* RMQClient.framework */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -509,6 +510,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58C3117523506DE600644CFC /* Headers */,
 				5891AD4B2301722600A65C5F /* libBaiduASRSDK.a */,
 				5891AD492301722600A65C5F /* libBaiduTTSSDK.a */,
 				5891AD4A2301722600A65C5F /* libMiPushSDK.a */,
@@ -565,8 +567,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				5891AD0C2301540200A65C5F /* CDVInAppBrowser.h */,
-				5891AD112301540200A65C5F /* CDVInAppBrowser.m */,
 				5891AD132301540300A65C5F /* CDVLocation.h */,
 				5891AD0F2301540200A65C5F /* CDVLocation.m */,
 				5891AD092301540100A65C5F /* RabbitMQPlugin.h */,
@@ -773,6 +773,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				5891AD3B2301673C00A65C5F /* Embed Frameworks */,
+				5825B8742351744D00B663A8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -797,7 +798,7 @@
 						DevelopmentTeam = D5A8L43W8A;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -871,7 +872,6 @@
 				5869C22E2296BB79004C2B94 /* Chinese_And_English_Speech_Female.dat in Resources */,
 				5869C2272296BB79004C2B94 /* Chinese_And_English_Speech_Male.dat in Resources */,
 				5869C22B2296BB79004C2B94 /* English_Speech_Male.dat in Resources */,
-				5891AD4323016EBB00A65C5F /* framework in Resources */,
 				5869C2252296BB79004C2B94 /* Chinese_And_English_Speech_Male-yyjw.dat in Resources */,
 				5869C2212296BB79004C2B94 /* Chinese_And_English_Speech_DYY.dat in Resources */,
 				FBF4996E53AF4E7893E448F7 /* JPushConfig.plist in Resources */,
@@ -895,6 +895,23 @@
 			shellPath = /bin/sh;
 			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js\n";
 			showEnvVarsInLog = 0;
+		};
+		5825B8742351744D00B663A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"  \n\n# This script loops through the frameworks embedded in the application and  \n# removes unused architectures.  \nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK  \ndo  \nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)  \nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"  \necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"  \n\nEXTRACTED_ARCHS=()  \n\nfor ARCH in $ARCHS  \ndo  \necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"  \nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"  \nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")  \ndone  \n\necho \"Merging extracted architectures: ${ARCHS}\"  \nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"  \nrm \"${EXTRACTED_ARCHS[@]}\"  \n\necho \"Replacing original executable with thinned version\"  \nrm \"$FRAMEWORK_EXECUTABLE_PATH\"  \nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"  \ndone  \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -962,7 +979,6 @@
 				BE70BC90FB1944CBA6FF3A96 /* CDVViewController+SplashScreen.m in Sources */,
 				2B37B529B1F545218DFBE8FE /* CDVStatusBar.m in Sources */,
 				24CB61AC52054BE292AECCC1 /* CDVVibration.m in Sources */,
-				5891AD182301540300A65C5F /* CDVInAppBrowser.m in Sources */,
 				7C5B2AFBA9804D279365DB5B /* SQLitePlugin.m in Sources */,
 				1A94C453F3224F7294102C8F /* PSPDFThreadSafeMutableDictionary.m in Sources */,
 				B246B5A2FE1C459294FE8427 /* sqlite3.c in Sources */,
@@ -1003,6 +1019,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/冥王星/Plugins/framework",
+					"$(PROJECT_DIR)/framework",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1045,6 +1062,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/冥王星/Plugins/framework",
+					"$(PROJECT_DIR)/framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "冥王星/冥王星-Prefix.pch";
@@ -1167,7 +1185,7 @@
 				1D6058950D05DD3E006BFB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "冥王星" */ = {
 			isa = XCConfigurationList;
@@ -1176,7 +1194,7 @@
 				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -313,6 +313,46 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-camera.Camera",
+    "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "Camera"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.CameraPopoverOptions",
+    "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "CameraPopoverOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.camera",
+    "file": "plugins/cordova-plugin-camera/www/Camera.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "navigator.camera"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.CameraPopoverHandle",
+    "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "CameraPopoverHandle"
+    ]
+  },
+  {
+    "id": "cordova-plugin-chooser.Chooser",
+    "file": "plugins/cordova-plugin-chooser/www/chooser.js",
+    "pluginId": "cordova-plugin-chooser",
+    "clobbers": [
+      "chooser"
+    ]
+  },
+  {
     "id": "cordova-plugin-contacts.contacts",
     "file": "plugins/cordova-plugin-contacts/www/contacts.js",
     "pluginId": "cordova-plugin-contacts",
@@ -609,6 +649,30 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.sqlitePorter"
     ]
+  },
+  {
+    "id": "cordova-plugin-app-version.AppVersionPlugin",
+    "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+    "pluginId": "cordova-plugin-app-version",
+    "clobbers": [
+      "cordova.getAppVersion"
+    ]
+  },
+  {
+    "id": "cordova-plugin-file-opener2.FileOpener2",
+    "file": "plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js",
+    "pluginId": "cordova-plugin-file-opener2",
+    "clobbers": [
+      "cordova.plugins.fileOpener2"
+    ]
+  },
+  {
+    "id": "cordova-plugin-filechooser.FileChooser",
+    "file": "plugins/cordova-plugin-filechooser/www/fileChooser.js",
+    "pluginId": "cordova-plugin-filechooser",
+    "clobbers": [
+      "fileChooser"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -617,6 +681,7 @@ module.exports.metadata =
   "com.telerik.plugins.nativepagetransitions": "0.6.5",
   "cordova-clipboard": "1.2.1",
   "cordova-plugin-BaiduSpeechAndTTS": "1.0.0",
+  "cordova-plugin-add-swift-support": "2.0.2",
   "cordova-plugin-file": "6.0.2",
   "cordova-plugin-advanced-http": "2.0.11",
   "cordova-plugin-android-permissions": "1.0.0",
@@ -624,8 +689,11 @@ module.exports.metadata =
   "cordova-plugin-background-mode": "0.7.2",
   "cordova-plugin-badge": "0.8.8",
   "cordova-plugin-calendar": "5.1.4",
+  "cordova-plugin-camera": "4.1.0",
+  "cordova-plugin-chooser": "1.2.5",
   "cordova-plugin-contacts": "3.0.1",
   "cordova-plugin-file-transfer": "1.7.1",
+  "cordova-plugin-filepath": "1.5.6",
   "cordova-plugin-geolocation": "4.0.2",
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-ionic-webview": "2.3.3",
@@ -643,7 +711,10 @@ module.exports.metadata =
   "cordova-sqlite-storage": "2.6.0",
   "ionic-plugin-keyboard": "2.2.1",
   "jpush-phonegap-plugin": "3.6.4",
-  "uk.co.workingedge.cordova.plugin.sqliteporter": "1.1.0"
+  "uk.co.workingedge.cordova.plugin.sqliteporter": "1.1.0",
+  "cordova-plugin-app-version": "0.1.9",
+  "cordova-plugin-file-opener2": "2.2.1",
+  "cordova-plugin-filechooser": "1.2.0"
 };
 // BOTTOM OF METADATA
 });
